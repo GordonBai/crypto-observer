@@ -34,8 +34,15 @@ def main(argv=None):
             p.add_argument("--cycles", type=positive, default=4)
             p.add_argument("--interval", type=positive, default=300)
     p = subs.add_parser("short-cycle")
+    p.add_argument("--mode", choices=("full","critical","maintenance"), default="full")
+    p.add_argument("--network-budget-seconds", type=positive)
+    p.add_argument("--request-budget", type=positive)
     p.add_argument("--output-dir",default="reports/short_term")
     p.add_argument("--market-limit",type=positive,default=36)
+    p = subs.add_parser("short-quotes")
+    p.add_argument("--output-dir", default="reports/short_term")
+    p.add_argument("--network-budget-seconds", type=positive)
+    p.add_argument("--request-budget", type=positive)
     p = subs.add_parser("market-collect")
     p.add_argument("--limit",type=positive,default=36)
     for name in ("market-report","short-report"):
@@ -48,6 +55,9 @@ def main(argv=None):
     p = subs.add_parser("audit")
     p.add_argument("--output")
     p = subs.add_parser("cycle")
+    p.add_argument("--mode", choices=("full","critical","maintenance"), default="full")
+    p.add_argument("--network-budget-seconds", type=positive)
+    p.add_argument("--request-budget", type=positive)
     p.add_argument("--output-dir",default="reports")
     p.add_argument("--pages",type=int,choices=range(1,11),default=3)
     p.add_argument("--refresh-limit",type=positive,default=300)
@@ -75,7 +85,7 @@ def main(argv=None):
     p = subs.add_parser("report")
     p.add_argument("--output")
     args = parser.parse_args(argv)
-    short_commands = {"short-cycle","market-collect","market-report","short-report"}
+    short_commands = {"short-cycle","short-quotes","market-collect","market-report","short-report"}
     path = Path(args.db or ("data/short_term_v2.sqlite3" if args.command in short_commands else "data/observer.sqlite3")).expanduser().resolve()
     path.parent.mkdir(parents=True, exist_ok=True)
     lock = None
@@ -88,6 +98,11 @@ def main(argv=None):
             parser.exit(2, "another collector is using this database\n")
     store = Store(path)
     try:
+        if args.command == "short-quotes":
+            from .quote_worker import service
+            result = service(store, Client(), args.output_dir, args.network_budget_seconds, args.request_budget)
+            print(json.dumps(result), flush=True)
+            return 1 if result["status"] == "failed" else 0
         if args.command in short_commands:
             from .market_data import collect_market, report as market_report
             from .short_experiment import report as short_report
@@ -103,7 +118,7 @@ def main(argv=None):
                     print(result)
                 return 0
             result = (collect_market(store,Client(),args.limit) if args.command=="market-collect"
-                      else short_cycle(store,Client(),args.output_dir,args.market_limit))
+                      else short_cycle(store,Client(),args.output_dir,args.market_limit,args.mode,args.network_budget_seconds,args.request_budget))
             print(json.dumps(result),flush=True)
             return 1 if result.get("status")=="failed" else 0
         if args.command in ("report", "cases", "paper-report", "evaluate-report", "holder-report", "audit", "windows-report"):
@@ -121,7 +136,7 @@ def main(argv=None):
             print(json.dumps(check_quotes(store,client,args.limit)),flush=True)
             return 0
         if args.command=="cycle":
-            result=cycle(store,client,args.output_dir,args.pages,args.refresh_limit,args.holder_limit)
+            result=cycle(store,client,args.output_dir,args.pages,args.refresh_limit,args.holder_limit,args.mode,args.network_budget_seconds,args.request_budget)
             print(json.dumps(result),flush=True)
             return 1 if result["status"]=="failed" else 0
         if args.command=="holder-index":

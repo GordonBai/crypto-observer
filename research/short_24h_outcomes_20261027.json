@@ -1,0 +1,280 @@
+{
+  "asof_utc": "2026-10-27T13:05:58.888260+00:00",
+  "phase": "development",
+  "mode": "displayed_book_not_fills",
+  "fee_bps_per_side": 10,
+  "summary": {
+    "volume": {
+      "n": 5,
+      "mean_net": "-0.00419702239717486596715808898"
+    },
+    "matched_random:volume": {
+      "n": 2,
+      "mean_net": "-0.00704900907804164862494239025"
+    },
+    "price": {
+      "n": 1,
+      "mean_net": "-0.2539719317273662507705060898"
+    }
+  },
+  "outcomes": [
+    {
+      "instrument_key": "bitget:spot:APTUSDT",
+      "strategy": "volume",
+      "phase": "development",
+      "position_id": 1,
+      "entry_at": "2026-10-26T03:07:03.085343+00:00",
+      "quantity_base": "141.9317723854122321555271747",
+      "entry_cost_quote": "100.1000000000000000000000000",
+      "horizon_hours": 24,
+      "observed_at": "2026-10-27T03:12:03.089854+00:00",
+      "status": "quoted",
+      "quote_id": 2510,
+      "proceeds_quote": "96.16186990375478927203065135",
+      "net_return": "-0.0393419590034486586210724141",
+      "stress_returns": "{\"0\":\"-0.0374187196821342415212147012\",\"10\":\"-0.0393419590034486586210724141\",\"30\":\"-0.0431769327249130994981565873\"}",
+      "entry_request": 435,
+      "exit_request": 27222
+    },
+    {
+      "instrument_key": "bitget:spot:BCHUSDT",
+      "strategy": "volume",
+      "phase": "development",
+      "position_id": 2,
+      "entry_at": "2026-10-26T04:08:07.129127+00:00",
+      "quantity_base": "0.3599029507016912558474271321",
+      "entry_cost_quote": "100.1000000000000000000000000",
+      "horizon_hours": 24,
+      "observed_at": "2026-10-27T04:08:49.321223+00:00",
+      "status": "quoted",
+      "quote_id": 2667,
+      "proceeds_quote": "101.0319560580280676502338971",
+      "net_return": "0.009310250329950725776562409",
+      "stress_returns": "{\"0\":\"0.011330891471752428931270241\",\"10\":\"0.009310250329950725776562409\",\"30\":\"0.005281055630445834142050279\"}",
+      "entry_request": 1525,
+      "exit_request": 28268
+    },
+    {
+      "instrument_key": "bitget:spot:TAOUSDT",
+      "strategy": "matched_random:volume",
+      "phase": "development",
+      "position_id": 3,
+      "entry_at": "2026-10-26T04:08:07.663955+00:00",
+      "quantity_base": "0.4017677782241864202490960225",
+      "entry_cost_quote": "100.1000000000000000000000000",
+      "horizon_hours": 24,
+      "observed_at": "2026-10-27T04:08:49.937965+00:00",
+      "status": "quoted",
+      "quote_id": 2668,
+      "proceeds_quote": "99.69931699477701888308557654",
+      "net_return": "-0.0040028272250048063627814531",
+      "stress_returns": "{\"0\":\"-0.0020088388911209321012454801\",\"10\":\"-0.0040028272250048063627814531\",\"30\":\"-0.0079788757472059514505899738\"}",
+      "entry_request": 1526,
+      "exit_request": 28269
+    },
+    {
+      "instrument_key": "bitget:spot:TIAUSDT",
+      "strategy": "volume",
+      "phase": "development",
+      "position_id": 4,
+      "entry_at": "2026-10-26T07:11:47.752226+00:00",
+      "quantity_base": "189.7653576171504458357047998",
+      "entry_cost_quote": "100.1000000000000000000000000",
+      "horizon_hours": 24,
+      "observed_at": "2026-10-27T07:16:45.335879+00:00",
+      "status": "quoted",
+      "quote_id": 3237,
+      "proceeds_quote": "100.1829317499373932840068298",
+      "net_return": "0.000828489010363569270797500",
+      "stress_returns": "{\"0\":\"0.002832149649022955795864162\",\"10\":\"0.000828489010363569270797500\",\"30\":\"-0.0031668462611406909985278470\"}",
+      "entry_request": 4855,
+      "exit_request": 31776
+    },
+    {
+      "instrument_key": "bitget:spot:RT1USDT",
+      "strategy": "price",
+      "phase": "development",
+      "position_id": 5,
+      "entry_at": "2026-10-26T07:11:48.433194+00:00",
+      "quantity_base": "22176.41843971631205673758865",
+      "entry_cost_quote": "100.1000000000000000000000000",
+      "horizon_hours": 24,
+      "observed_at": "2026-10-27T07:16:45.976770+00:00",
+      "status": "quoted",
+      "quote_id": 3238,
+      "proceeds_quote": "74.67740963409063829787234041",
+      "net_return": "-0.2539719317273662507705060898",
+      "stress_returns": "{\"0\":\"-0.2524783820411347517730496455\",\"10\":\"-0.2539719317273662507705060898\",\"30\":\"-0.2569500966051957602370194383\"}",
+      "entry_request": 4856,
+      "exit_request": 31777
+    },
+    {
+      "instrument_key": "bitget:spot:APTUSDT",
+      "strategy": "volume",
+      "phase": "development",
+      "position_id": 6,
+      "entry_at": "2026-10-26T08:13:10.761023+00:00",
+      "quantity_base": "145.4137040267480738479430150",
+      "entry_cost_quote": "100.1000000000000000000000000",
+      "horizon_hours": 24,
+      "observed_at": "2026-10-27T08:19:11.320187+00:00",
+      "status": "quoted",
+      "quote_id": 3431,
+      "proceeds_quote": "99.72668130654819014391626692",
+      "net_return": "-0.0037294574770410575033339968",
+      "stress_returns": "{\"0\":\"-0.001734921856374473033871202\",\"10\":\"-0.0037294574770410575033339968\",\"30\":\"-0.0077065972989086237435389715\"}",
+      "entry_request": 5985,
+      "exit_request": 32947
+    },
+    {
+      "instrument_key": "bitget:spot:BCHUSDT",
+      "strategy": "volume",
+      "phase": "development",
+      "position_id": 7,
+      "entry_at": "2026-10-26T09:08:49.312275+00:00",
+      "quantity_base": "0.3582945180938731637405947689",
+      "entry_cost_quote": "100.1000000000000000000000000",
+      "horizon_hours": 24,
+      "observed_at": "2026-10-27T09:09:10.382989+00:00",
+      "status": "quoted",
+      "quote_id": 3586,
+      "proceeds_quote": "101.2959512719455392332497313",
+      "net_return": "0.011947565154301091241256057",
+      "stress_returns": "{\"0\":\"0.013973486205661053385883196\",\"10\":\"0.011947565154301091241256057\",\"30\":\"0.007907842220382921461341521\"}",
+      "entry_request": 7002,
+      "exit_request": 33892
+    },
+    {
+      "instrument_key": "bitget:spot:TAOUSDT",
+      "strategy": "matched_random:volume",
+      "phase": "development",
+      "position_id": 8,
+      "entry_at": "2026-10-26T09:08:49.875927+00:00",
+      "quantity_base": "0.3988285486443381180223285486",
+      "entry_cost_quote": "100.1000000000000000000000000",
+      "horizon_hours": 24,
+      "observed_at": "2026-10-27T09:09:11.017612+00:00",
+      "status": "quoted",
+      "quote_id": 3587,
+      "proceeds_quote": "99.08947138779904306220095693",
+      "net_return": "-0.0100951909310784908871033274",
+      "stress_returns": "{\"0\":\"-0.0081133995215311004784688996\",\"10\":\"-0.0100951909310784908871033274\",\"30\":\"-0.0140469185672647130379197337\"}",
+      "entry_request": 7003,
+      "exit_request": 33893
+    }
+  ],
+  "request_provenance": [
+    {
+      "id": 435,
+      "url": "https://api.bitget.com/api/v3/market/orderbook?category=SPOT&symbol=APTUSDT&limit=50",
+      "observed_at": "2026-10-26T03:07:03.083319+00:00",
+      "sha256": "73c19a1b8d74e8de0758c12451e6df5aba8e6ffa315448feab1f7684b4638aff",
+      "body_sha_verified": true
+    },
+    {
+      "id": 1525,
+      "url": "https://api.bitget.com/api/v3/market/orderbook?category=SPOT&symbol=BCHUSDT&limit=50",
+      "observed_at": "2026-10-26T04:08:07.126183+00:00",
+      "sha256": "58a3383176157be08ee9cc92a0c3c9c074e91e597c20d64f120944515c1bec20",
+      "body_sha_verified": true
+    },
+    {
+      "id": 1526,
+      "url": "https://api.bitget.com/api/v3/market/orderbook?category=SPOT&symbol=TAOUSDT&limit=50",
+      "observed_at": "2026-10-26T04:08:07.661401+00:00",
+      "sha256": "167f65e877fc6d165d7beb27f83b6c742af0b55860c0f87d3322704f9e71a12a",
+      "body_sha_verified": true
+    },
+    {
+      "id": 4855,
+      "url": "https://api.bitget.com/api/v3/market/orderbook?category=SPOT&symbol=TIAUSDT&limit=50",
+      "observed_at": "2026-10-26T07:11:47.748738+00:00",
+      "sha256": "7bf79960512ff4defb8f70ae894bdd330e8f692b8093e7aa6989761caca1f59b",
+      "body_sha_verified": true
+    },
+    {
+      "id": 4856,
+      "url": "https://api.bitget.com/api/v3/market/orderbook?category=SPOT&symbol=RT1USDT&limit=50",
+      "observed_at": "2026-10-26T07:11:48.431202+00:00",
+      "sha256": "116f33b4b7c4b1cd3fde7863090c7159b09f872a4801b4ee43f34de11b7564b3",
+      "body_sha_verified": true
+    },
+    {
+      "id": 5985,
+      "url": "https://api.bitget.com/api/v3/market/orderbook?category=SPOT&symbol=APTUSDT&limit=50",
+      "observed_at": "2026-10-26T08:13:10.758261+00:00",
+      "sha256": "b380f9d4c8a59a269dde42c3f8d436a7ebaa6398cf399246597cc8e84dd2c53d",
+      "body_sha_verified": true
+    },
+    {
+      "id": 7002,
+      "url": "https://api.bitget.com/api/v3/market/orderbook?category=SPOT&symbol=BCHUSDT&limit=50",
+      "observed_at": "2026-10-26T09:08:49.310769+00:00",
+      "sha256": "d59111ff27f3eca43ad4a52ff6a2a6e99ff456ea4e8381cfa9214be70b34ba64",
+      "body_sha_verified": true
+    },
+    {
+      "id": 7003,
+      "url": "https://api.bitget.com/api/v3/market/orderbook?category=SPOT&symbol=TAOUSDT&limit=50",
+      "observed_at": "2026-10-26T09:08:49.872510+00:00",
+      "sha256": "6d894e40ce618b30cf4ee99c973d018a95ac12539a8766686b74b559abe46ac0",
+      "body_sha_verified": true
+    },
+    {
+      "id": 27222,
+      "url": "https://api.bitget.com/api/v3/market/orderbook?category=SPOT&symbol=APTUSDT&limit=50",
+      "observed_at": "2026-10-27T03:12:03.086963+00:00",
+      "sha256": "84cc9aa1c2e0e96c2a7223c63df77b64118304ae09e69b85e8cc8cbf7b429ba7",
+      "body_sha_verified": true
+    },
+    {
+      "id": 28268,
+      "url": "https://api.bitget.com/api/v3/market/orderbook?category=SPOT&symbol=BCHUSDT&limit=50",
+      "observed_at": "2026-10-27T04:08:49.307912+00:00",
+      "sha256": "670e3193fe1452a387367cce47fe0ee027cca4f1d1c5fa98abb774a7a2abeee2",
+      "body_sha_verified": true
+    },
+    {
+      "id": 28269,
+      "url": "https://api.bitget.com/api/v3/market/orderbook?category=SPOT&symbol=TAOUSDT&limit=50",
+      "observed_at": "2026-10-27T04:08:49.932626+00:00",
+      "sha256": "567ffcd1c0f1f7a22f74be4ae73668e4b44080cd7daff48a95867f3621d17c38",
+      "body_sha_verified": true
+    },
+    {
+      "id": 31776,
+      "url": "https://api.bitget.com/api/v3/market/orderbook?category=SPOT&symbol=TIAUSDT&limit=50",
+      "observed_at": "2026-10-27T07:16:45.332812+00:00",
+      "sha256": "85607e8a9271a2a589206969f302e21a8c59598d2da427bae2607fadce050c38",
+      "body_sha_verified": true
+    },
+    {
+      "id": 31777,
+      "url": "https://api.bitget.com/api/v3/market/orderbook?category=SPOT&symbol=RT1USDT&limit=50",
+      "observed_at": "2026-10-27T07:16:45.973129+00:00",
+      "sha256": "06aab76ea5d30121017d9f0511a721f6285e9249c781ef3f8076ed4b4958255f",
+      "body_sha_verified": true
+    },
+    {
+      "id": 32947,
+      "url": "https://api.bitget.com/api/v3/market/orderbook?category=SPOT&symbol=APTUSDT&limit=50",
+      "observed_at": "2026-10-27T08:19:11.316726+00:00",
+      "sha256": "083ca1993dfd5ca37555b5d3385dc84196463c3d3e2c9879c764e3be2e2d2caf",
+      "body_sha_verified": true
+    },
+    {
+      "id": 33892,
+      "url": "https://api.bitget.com/api/v3/market/orderbook?category=SPOT&symbol=BCHUSDT&limit=50",
+      "observed_at": "2026-10-27T09:09:10.379654+00:00",
+      "sha256": "efa742db86bd8255bb2480e53686f4538beef6aefde2f4563177f248cfe69a44",
+      "body_sha_verified": true
+    },
+    {
+      "id": 33893,
+      "url": "https://api.bitget.com/api/v3/market/orderbook?category=SPOT&symbol=TAOUSDT&limit=50",
+      "observed_at": "2026-10-27T09:09:11.014975+00:00",
+      "sha256": "8a792a752c165bc7d39d128fddc246fc0dbadbcff9b1df43095fe67d2002877d",
+      "body_sha_verified": true
+    }
+  ]
+}

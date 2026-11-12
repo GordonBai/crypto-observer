@@ -1,0 +1,477 @@
+{
+  "checked_at": "2026-10-25T23:07:34.703049-04:00",
+  "last_health": {
+    "started_at": "2026-10-26T03:05:59.333311+00:00",
+    "observation_until": "2026-11-27T02:57:42.391246+00:00",
+    "mode": "public_data_and_paper_only",
+    "errors": [],
+    "steps": {
+      "market_collect": {
+        "run_id": 6,
+        "universe": {
+          "status": "already_frozen"
+        },
+        "instruments_attempted": 36,
+        "bars_added": 0,
+        "bar_results": [
+          {
+            "instrument_key": "bitget:spot:ANIMEUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:APTUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:AVNTUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:AVVUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:BCHUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:BIGTIMEUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:BTTUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:BUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:COMPUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:HOLDUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:IOSTUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:KITEUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:MAXEXCHANGEUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:METISUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:NOTUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:PORTALUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:ROBOUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:RT1USDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:SENTUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:TAOUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:TIAUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:TRIAUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:UNITASUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:spot:ZIGUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:swap:ACTUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:swap:ALICEUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:swap:BGBUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:swap:CFGUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 1,
+            "notes": [
+              "revised_bars_preserved_original:1"
+            ]
+          },
+          {
+            "instrument_key": "bitget:swap:DGAIUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:swap:FLUIDUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:swap:KERNELUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:swap:MOCAUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:swap:ORDIUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:swap:RAVEUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:swap:ROBOUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:swap:TAGUSDT",
+            "accepted": 0,
+            "rejected": 0,
+            "revised": 0,
+            "notes": []
+          }
+        ],
+        "swap_diagnostics": [
+          {
+            "instrument_key": "bitget:swap:ACTUSDT",
+            "open_interest": "25435947",
+            "funding_rate": "0.00005",
+            "funding_interval_hours": "4",
+            "next_funding_at": "2026-10-26T04:00:00.000000+00:00",
+            "market_price": "0.00835",
+            "mark_price": "0.00835",
+            "index_price": "0.0083457138163693",
+            "basis_fraction": "0.000513579032903461263755938",
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:swap:ALICEUSDT",
+            "open_interest": "5212138.299999999",
+            "funding_rate": "-0.000032",
+            "funding_interval_hours": "4",
+            "next_funding_at": "2026-10-26T04:00:00.000000+00:00",
+            "market_price": "0.1321",
+            "mark_price": "0.1327",
+            "index_price": "0.1329226315789474",
+            "basis_fraction": "-0.0061887999746590205963579982",
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:swap:BGBUSDT",
+            "open_interest": "11203538",
+            "funding_rate": "0.000028",
+            "funding_interval_hours": "8",
+            "next_funding_at": "2026-10-26T08:00:00.000000+00:00",
+            "market_price": "1.8523",
+            "mark_price": "1.8523",
+            "index_price": "1.8539616862094751",
+            "basis_fraction": "-0.0008962894011431850528903493",
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:swap:CFGUSDT",
+            "open_interest": "8346495",
+            "funding_rate": "0.00005",
+            "funding_interval_hours": "4",
+            "next_funding_at": "2026-10-26T04:00:00.000000+00:00",
+            "market_price": "0.10241",
+            "mark_price": "0.10274",
+            "index_price": "0.1028159394921887",
+            "basis_fraction": "-0.0039482155606771525557972209",
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:swap:DGAIUSDT",
+            "open_interest": "233518",
+            "funding_rate": "-0.000155",
+            "funding_interval_hours": "4",
+            "next_funding_at": "2026-10-26T04:00:00.000000+00:00",
+            "market_price": "0.84",
+            "mark_price": "0.8404",
+            "index_price": "0.8420898092822366",
+            "basis_fraction": "-0.0024816940654083786741788744",
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:swap:FLUIDUSDT",
+            "open_interest": "99575",
+            "funding_rate": "0.00005",
+            "funding_interval_hours": "4",
+            "next_funding_at": "2026-10-26T04:00:00.000000+00:00",
+            "market_price": "2.119",
+            "mark_price": "2.123",
+            "index_price": "2.1234268195566844",
+            "basis_fraction": "-0.0020847525876161832335858981",
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:swap:KERNELUSDT",
+            "open_interest": "7107623",
+            "funding_rate": "0.00005",
+            "funding_interval_hours": "4",
+            "next_funding_at": "2026-10-26T04:00:00.000000+00:00",
+            "market_price": "0.04678",
+            "mark_price": "0.04695",
+            "index_price": "0.0470931592778555",
+            "basis_fraction": "-0.0066497827424960234923377331",
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:swap:MOCAUSDT",
+            "open_interest": "30322748",
+            "funding_rate": "0.00005",
+            "funding_interval_hours": "4",
+            "next_funding_at": "2026-10-26T04:00:00.000000+00:00",
+            "market_price": "0.008585",
+            "mark_price": "0.008648",
+            "index_price": "0.0086475882352941",
+            "basis_fraction": "-0.0072376521165350568420684105",
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:swap:ORDIUSDT",
+            "open_interest": "536848.65999999962",
+            "funding_rate": "0.00005",
+            "funding_interval_hours": "4",
+            "next_funding_at": "2026-10-26T04:00:00.000000+00:00",
+            "market_price": "3.537",
+            "mark_price": "3.535",
+            "index_price": "3.5337480801289831",
+            "basis_fraction": "0.000920246660848048832309283",
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:swap:RAVEUSDT",
+            "open_interest": "15960103",
+            "funding_rate": "0.00005",
+            "funding_interval_hours": "4",
+            "next_funding_at": "2026-10-26T04:00:00.000000+00:00",
+            "market_price": "0.13645",
+            "mark_price": "0.13631",
+            "index_price": "0.1362648640206339",
+            "basis_fraction": "0.001358647958860956217456460",
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:swap:ROBOUSDT",
+            "open_interest": "40044911",
+            "funding_rate": "0.000015",
+            "funding_interval_hours": "4",
+            "next_funding_at": "2026-10-26T04:00:00.000000+00:00",
+            "market_price": "0.005627",
+            "mark_price": "0.005628",
+            "index_price": "0.0056312284579961",
+            "basis_fraction": "-0.0007508944145385849462221731",
+            "notes": []
+          },
+          {
+            "instrument_key": "bitget:swap:TAGUSDT",
+            "open_interest": "4493090668",
+            "funding_rate": "0.00005",
+            "funding_interval_hours": "4",
+            "next_funding_at": "2026-10-26T04:00:00.000000+00:00",
+            "market_price": "0.0004895",
+            "mark_price": "0.0004886",
+            "index_price": "0.0004886390789525",
+            "basis_fraction": "0.001761875143808727319025817",
+            "notes": []
+          }
+        ],
+        "notes": [
+          "bitget:swap:CFGUSDT:revised_bars_preserved_original:1"
+        ]
+      },
+      "short_experiment": {
+        "run_id": 7,
+        "version": "short-v1",
+        "phase": "development",
+        "recovered_events": 0,
+        "assessments": 24,
+        "unknown": 0,
+        "entered": 1,
+        "entry_unknown": 0,
+        "exits": 0,
+        "path_marks": 1,
+        "events": 0,
+        "triggered": 0,
+        "cooldown": 0,
+        "unmatched": 0,
+        "matched_controls": 0,
+        "calibration_status": "pending",
+        "notes": []
+      },
+      "report:market.md": {
+        "path": "/Users/gordonbai/crypto/reports/short_term/market.md"
+      },
+      "report:experiment.md": {
+        "path": "/Users/gordonbai/crypto/reports/short_term/experiment.md"
+      }
+    },
+    "current_step": null,
+    "disk_free_bytes": 470605238272,
+    "database_quick_check": "ok",
+    "status": "degraded",
+    "finished_at": "2026-10-26T03:07:03.161562+00:00"
+  },
+  "positions": [
+    {
+      "id": 1,
+      "instrument_key": "bitget:spot:APTUSDT",
+      "strategy": "volume",
+      "status": "open",
+      "entry_at": "2026-10-26T03:07:03.085343+00:00",
+      "entry_cost_quote": "100.1000000000000000000000000",
+      "entry_quote_id": 1,
+      "reason": null
+    }
+  ],
+  "counts": {
+    "requests": 435,
+    "market_bars": 1188,
+    "short_assessments": 48,
+    "short_events": 72,
+    "short_positions": 1,
+    "short_path_marks": 1,
+    "short_outcomes": 0
+  },
+  "raw_sha_mismatches": 0,
+  "foreign_key_violations": 0
+}

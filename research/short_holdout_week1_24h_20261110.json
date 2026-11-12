@@ -1,0 +1,76 @@
+{
+  "asof_utc": "2026-11-10T14:48:36.663189+00:00",
+  "trigger_window_utc": [
+    "2026-11-02T02:57:42.391246+00:00",
+    "2026-11-09T02:57:42.391246+00:00"
+  ],
+  "fee_bps_per_side": 10,
+  "calibration_at": "2026-11-02T03:03:16.959664+00:00",
+  "thresholds": {
+    "price_return": "0.010273972602739726027397260",
+    "volume_ratio": "3.739136482932995314461898367"
+  },
+  "results": [
+    {
+      "strategy": "combined",
+      "entries": 27,
+      "quoted": 25,
+      "missed_window": 2,
+      "mean_known": "-0.06074102054788881164959465996"
+    },
+    {
+      "strategy": "matched_random:combined",
+      "entries": 2,
+      "quoted": 2,
+      "mean_known": "0.03659078305125796052483688595"
+    },
+    {
+      "strategy": "matched_random:price",
+      "entries": 7,
+      "quoted": 7,
+      "mean_known": "-0.0098397298415422591954616582"
+    },
+    {
+      "strategy": "matched_random:volume",
+      "entries": 9,
+      "quoted": 9,
+      "mean_known": "0.01443231137477091714589044656"
+    },
+    {
+      "strategy": "price",
+      "entries": 50,
+      "quoted": 47,
+      "missed_window": 2,
+      "entry_unknown": 1,
+      "mean_known": "-0.04491581747125940207107172196"
+    },
+    {
+      "strategy": "volume",
+      "entries": 71,
+      "quoted": 68,
+      "quote_unknown": 1,
+      "missed_window": 2,
+      "mean_known": "-0.04231690015680947776267741788"
+    }
+  ],
+  "complete_pairs": [
+    {
+      "strategy": "combined",
+      "n": 2,
+      "assets": 2,
+      "delta": -0.03650535182308368
+    },
+    {
+      "strategy": "price",
+      "n": 7,
+      "assets": 3,
+      "delta": 0.003490209081341908
+    },
+    {
+      "strategy": "volume",
+      "n": 9,
+      "assets": 5,
+      "delta": -0.015583521128487647
+    }
+  ]
+}

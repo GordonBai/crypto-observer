@@ -1,0 +1,64 @@
+{
+  "asof_utc": "2026-11-02T04:39:20.726276+00:00",
+  "base_v2_7d_exit_status": [
+    {
+      "strategy": "buy_pressure",
+      "status": "quote_unknown",
+      "n": 5
+    },
+    {
+      "strategy": "buy_pressure",
+      "status": "quoted",
+      "n": 1
+    },
+    {
+      "strategy": "liquidity",
+      "status": "quote_unknown",
+      "n": 1
+    },
+    {
+      "strategy": "liquidity",
+      "status": "quoted",
+      "n": 4
+    },
+    {
+      "strategy": "matched_random:buy_pressure",
+      "status": "quote_unknown",
+      "n": 3
+    },
+    {
+      "strategy": "matched_random:buy_pressure",
+      "status": "quoted",
+      "n": 3
+    },
+    {
+      "strategy": "matched_random:liquidity",
+      "status": "quote_unknown",
+      "n": 1
+    },
+    {
+      "strategy": "matched_random:liquidity",
+      "status": "quoted",
+      "n": 5
+    }
+  ],
+  "cycles": {
+    "base": {
+      "completed": 565,
+      "failed": 5,
+      "max_start_gap_minutes": 486.5877214833333,
+      "gaps_over_60min": 19,
+      "latest_finished": "2026-11-02T04:27:18.998128+00:00"
+    },
+    "short": {
+      "completed": 1240,
+      "failed": 0,
+      "max_start_gap_minutes": 306.9158060666667,
+      "gaps_over_60min": 12,
+      "latest_finished": "2026-11-02T04:35:54.580874+00:00"
+    }
+  },
+  "base_integrity": "ok",
+  "base_fk": 0,
+  "caveat": "Independent AMM quotes do not simulate entry reserve changes. Unknown exits retained. Calendar week elapsed is not continuous coverage assurance."
+}

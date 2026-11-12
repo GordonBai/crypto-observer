@@ -1,0 +1,185 @@
+{
+  "asof_utc": "2026-11-02T16:57:25.807990+00:00",
+  "power_log_source": "pmset -g log",
+  "power_events": [
+    {
+      "local_timestamp": "2026-11-02 03:39:10 -0500",
+      "event": "sleep",
+      "maintenance_sleep": true
+    },
+    {
+      "local_timestamp": "2026-11-02 03:45:19 -0500",
+      "event": "dark_wake",
+      "maintenance_sleep": false
+    },
+    {
+      "local_timestamp": "2026-11-02 03:46:04 -0500",
+      "event": "sleep",
+      "maintenance_sleep": true
+    },
+    {
+      "local_timestamp": "2026-11-02 04:30:18 -0500",
+      "event": "dark_wake",
+      "maintenance_sleep": false
+    },
+    {
+      "local_timestamp": "2026-11-02 04:31:03 -0500",
+      "event": "sleep",
+      "maintenance_sleep": true
+    },
+    {
+      "local_timestamp": "2026-11-02 04:46:20 -0500",
+      "event": "dark_wake",
+      "maintenance_sleep": false
+    },
+    {
+      "local_timestamp": "2026-11-02 04:47:05 -0500",
+      "event": "sleep",
+      "maintenance_sleep": true
+    },
+    {
+      "local_timestamp": "2026-11-02 05:32:40 -0500",
+      "event": "dark_wake",
+      "maintenance_sleep": false
+    },
+    {
+      "local_timestamp": "2026-11-02 05:33:25 -0500",
+      "event": "sleep",
+      "maintenance_sleep": true
+    },
+    {
+      "local_timestamp": "2026-11-02 06:26:46 -0500",
+      "event": "dark_wake",
+      "maintenance_sleep": false
+    },
+    {
+      "local_timestamp": "2026-11-02 06:27:31 -0500",
+      "event": "sleep",
+      "maintenance_sleep": true
+    },
+    {
+      "local_timestamp": "2026-11-02 07:17:24 -0500",
+      "event": "dark_wake",
+      "maintenance_sleep": false
+    },
+    {
+      "local_timestamp": "2026-11-02 07:18:09 -0500",
+      "event": "sleep",
+      "maintenance_sleep": true
+    },
+    {
+      "local_timestamp": "2026-11-02 07:39:06 -0500",
+      "event": "dark_wake",
+      "maintenance_sleep": false
+    },
+    {
+      "local_timestamp": "2026-11-02 07:39:51 -0500",
+      "event": "sleep",
+      "maintenance_sleep": true
+    },
+    {
+      "local_timestamp": "2026-11-02 08:39:33 -0500",
+      "event": "dark_wake",
+      "maintenance_sleep": false
+    },
+    {
+      "local_timestamp": "2026-11-02 08:40:18 -0500",
+      "event": "sleep",
+      "maintenance_sleep": true
+    },
+    {
+      "local_timestamp": "2026-11-02 08:50:38 -0500",
+      "event": "dark_wake",
+      "maintenance_sleep": false
+    },
+    {
+      "local_timestamp": "2026-11-02 08:51:24 -0500",
+      "event": "sleep",
+      "maintenance_sleep": true
+    },
+    {
+      "local_timestamp": "2026-11-02 09:01:00 -0500",
+      "event": "dark_wake",
+      "maintenance_sleep": false
+    },
+    {
+      "local_timestamp": "2026-11-02 09:01:46 -0500",
+      "event": "sleep",
+      "maintenance_sleep": true
+    },
+    {
+      "local_timestamp": "2026-11-02 09:16:49 -0500",
+      "event": "dark_wake",
+      "maintenance_sleep": false
+    },
+    {
+      "local_timestamp": "2026-11-02 09:17:34 -0500",
+      "event": "sleep",
+      "maintenance_sleep": true
+    },
+    {
+      "local_timestamp": "2026-11-02 09:54:01 -0500",
+      "event": "dark_wake",
+      "maintenance_sleep": false
+    },
+    {
+      "local_timestamp": "2026-11-02 09:54:46 -0500",
+      "event": "sleep",
+      "maintenance_sleep": true
+    },
+    {
+      "local_timestamp": "2026-11-02 10:48:08 -0500",
+      "event": "dark_wake",
+      "maintenance_sleep": false
+    },
+    {
+      "local_timestamp": "2026-11-02 10:48:53 -0500",
+      "event": "sleep",
+      "maintenance_sleep": true
+    },
+    {
+      "local_timestamp": "2026-11-02 11:02:02 -0500",
+      "event": "dark_wake",
+      "maintenance_sleep": false
+    },
+    {
+      "local_timestamp": "2026-11-02 11:02:47 -0500",
+      "event": "sleep",
+      "maintenance_sleep": true
+    },
+    {
+      "local_timestamp": "2026-11-02 11:18:57 -0500",
+      "event": "dark_wake",
+      "maintenance_sleep": false
+    },
+    {
+      "local_timestamp": "2026-11-02 11:18:59 -0500",
+      "event": "full_wake",
+      "maintenance_sleep": false
+    },
+    {
+      "local_timestamp": "2026-11-02 11:19:03 -0500",
+      "event": "full_wake",
+      "maintenance_sleep": false
+    }
+  ],
+  "holdout_missed_windows": [
+    {
+      "instrument_key": "bitget:spot:RT1USDT",
+      "strategy": "volume",
+      "entry_at": "2026-11-02T03:09:32.249114+00:00",
+      "horizon_hours": 4,
+      "status": "missed_window",
+      "observed_at": "2026-11-02T14:01:24.202713+00:00"
+    },
+    {
+      "instrument_key": "bitget:spot:RT1USDT",
+      "strategy": "price",
+      "entry_at": "2026-11-02T04:08:26.195356+00:00",
+      "horizon_hours": 4,
+      "status": "missed_window",
+      "observed_at": "2026-11-02T14:01:24.204167+00:00"
+    }
+  ],
+  "interpretation": "macOS power log confirms repeated sleep in the observation interval; do not infer continuous per-instrument coverage or backfill missed execution prices."
+}

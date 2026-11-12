@@ -127,3 +127,14 @@ short-v1 以此前24个连续小时为基线，分别观察量、价、联合信
 宽限独立于Base实验；中断和错过窗口保留unknown，不回填后来价格。
 现货仅作展示盘口容量报价，不下单；永续OI/数量单位未确认，不用于合约模拟执行。
 详见 research/short_term_implementation_20261026.md。
+
+
+## 运行质量与研究审计升级
+
+新增可选 `--mode critical|maintenance`、`--network-budget-seconds`、`--request-budget`，
+以及独立 `short-quotes` 报价命令。默认 full 服务流程及冻结实验配置保持不变；新入口不会自动注册后台任务。
+预算限制新逻辑请求的准入，不强制取消在途请求；报价 worker 不做新选样，不改变冻结持仓顺序。
+
+只读诊断：`python3 -m crypto_observer.research_quality --output reports/research_quality.json`。
+报价审计：`python3 -m crypto_observer.quote_audit --db data/observer.sqlite3 --output reports/quote_audit_base.json`。
+详见 [工程升级说明](research/engineering_upgrade_20261111.md)、[报价审计](docs/QUOTE_AUDIT.md) 和 [TODO](TODO.md)。

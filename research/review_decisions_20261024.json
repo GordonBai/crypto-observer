@@ -1,0 +1,299 @@
+{
+  "reviewed_at": "2026-10-24T05:10:56.498662+00:00",
+  "reviewer": "Codex",
+  "scope": "technical_and_product_evidence_initial_review",
+  "cases": [
+    {
+      "case": 1,
+      "token": "0x02efbe1ffd8e6c99a035a9332c314ebd147dda6b",
+      "review_status": "initial_review_complete",
+      "identity": "unverified",
+      "product_and_demand": "unverified",
+      "fundamental_promotion": "defer",
+      "execution_review": "独立退出报价净值极低；暂不具备可核实的退出容量，需复核池储备与报价模型。",
+      "quote_check_id": 1,
+      "paper_cohort_changed": false,
+      "overlap_evidence": [
+        {
+          "token": "0x0bdb412562a84e2d3e6cd9891c3e776510aefa6e",
+          "shared_top_addresses": 2
+        },
+        {
+          "token": "0x18a08e2a96edb781729701e1cace6f29eb992b4a",
+          "shared_top_addresses": 2
+        },
+        {
+          "token": "0x257a97160b528b2c09cd5ca5d22050e59eb88c91",
+          "shared_top_addresses": 2
+        }
+      ]
+    },
+    {
+      "case": 2,
+      "token": "0x0b57ef43dd3854d9ce3c0d823183ee11b7ca033b",
+      "review_status": "initial_review_complete",
+      "identity": "unverified",
+      "product_and_demand": "unverified",
+      "fundamental_promotion": "defer",
+      "execution_review": "报价存在未知，不能确认指定金额的退出路径。",
+      "quote_check_id": 2,
+      "paper_cohort_changed": false,
+      "overlap_evidence": []
+    },
+    {
+      "case": 3,
+      "token": "0x0bdb412562a84e2d3e6cd9891c3e776510aefa6e",
+      "review_status": "initial_review_complete",
+      "identity": "unverified",
+      "product_and_demand": "unverified",
+      "fundamental_promotion": "defer",
+      "execution_review": "独立退出报价净值极低；暂不具备可核实的退出容量，需复核池储备与报价模型。",
+      "quote_check_id": 3,
+      "paper_cohort_changed": false,
+      "overlap_evidence": [
+        {
+          "token": "0x02efbe1ffd8e6c99a035a9332c314ebd147dda6b",
+          "shared_top_addresses": 2
+        },
+        {
+          "token": "0x18a08e2a96edb781729701e1cace6f29eb992b4a",
+          "shared_top_addresses": 2
+        },
+        {
+          "token": "0x257a97160b528b2c09cd5ca5d22050e59eb88c91",
+          "shared_top_addresses": 2
+        }
+      ]
+    },
+    {
+      "case": 4,
+      "token": "0x18a08e2a96edb781729701e1cace6f29eb992b4a",
+      "review_status": "initial_review_complete",
+      "identity": "unverified",
+      "product_and_demand": "unverified",
+      "fundamental_promotion": "defer",
+      "execution_review": "独立退出报价净值极低；暂不具备可核实的退出容量，需复核池储备与报价模型。",
+      "quote_check_id": 4,
+      "paper_cohort_changed": false,
+      "overlap_evidence": [
+        {
+          "token": "0x02efbe1ffd8e6c99a035a9332c314ebd147dda6b",
+          "shared_top_addresses": 2
+        },
+        {
+          "token": "0x0bdb412562a84e2d3e6cd9891c3e776510aefa6e",
+          "shared_top_addresses": 2
+        },
+        {
+          "token": "0x257a97160b528b2c09cd5ca5d22050e59eb88c91",
+          "shared_top_addresses": 14
+        }
+      ]
+    },
+    {
+      "case": 5,
+      "token": "0x1de8a433d418a27f3ecee1219a37d512a66520bd",
+      "review_status": "initial_review_complete",
+      "identity": "unverified",
+      "product_and_demand": "unverified",
+      "fundamental_promotion": "defer",
+      "execution_review": "来源返回指定金额的双向报价；仍缺乏实际成交、税费和可卖出性的完整验证。",
+      "quote_check_id": 5,
+      "paper_cohort_changed": false,
+      "overlap_evidence": []
+    },
+    {
+      "case": 6,
+      "token": "0x257a97160b528b2c09cd5ca5d22050e59eb88c91",
+      "review_status": "initial_review_complete",
+      "identity": "unverified",
+      "product_and_demand": "unverified",
+      "fundamental_promotion": "defer",
+      "execution_review": "独立退出报价净值极低；暂不具备可核实的退出容量，需复核池储备与报价模型。",
+      "quote_check_id": 6,
+      "paper_cohort_changed": false,
+      "overlap_evidence": [
+        {
+          "token": "0x02efbe1ffd8e6c99a035a9332c314ebd147dda6b",
+          "shared_top_addresses": 2
+        },
+        {
+          "token": "0x0bdb412562a84e2d3e6cd9891c3e776510aefa6e",
+          "shared_top_addresses": 2
+        },
+        {
+          "token": "0x18a08e2a96edb781729701e1cace6f29eb992b4a",
+          "shared_top_addresses": 14
+        }
+      ]
+    },
+    {
+      "case": 7,
+      "token": "0x2640c0dd6e406f55f8b1d35c65830603e4011a8f",
+      "review_status": "initial_review_complete",
+      "identity": "unverified",
+      "product_and_demand": "unverified",
+      "fundamental_promotion": "defer",
+      "execution_review": "独立退出报价净值极低；暂不具备可核实的退出容量，需复核池储备与报价模型。",
+      "quote_check_id": 7,
+      "paper_cohort_changed": false,
+      "overlap_evidence": []
+    },
+    {
+      "case": 8,
+      "token": "0x2e8c8554fce95bed9e58836353673f8b7619de41",
+      "review_status": "initial_review_complete",
+      "identity": "unverified",
+      "product_and_demand": "unverified",
+      "fundamental_promotion": "defer",
+      "execution_review": "来源返回指定金额的双向报价；仍缺乏实际成交、税费和可卖出性的完整验证。",
+      "quote_check_id": 8,
+      "paper_cohort_changed": false,
+      "overlap_evidence": []
+    },
+    {
+      "case": 9,
+      "token": "0x3ebf8d2042d339fd66c679a985e0eb527b2ae4df",
+      "review_status": "initial_review_complete",
+      "identity": "unverified",
+      "product_and_demand": "unverified",
+      "fundamental_promotion": "defer",
+      "execution_review": "独立退出报价净值极低；暂不具备可核实的退出容量，需复核池储备与报价模型。",
+      "quote_check_id": 9,
+      "paper_cohort_changed": false,
+      "overlap_evidence": []
+    },
+    {
+      "case": 10,
+      "token": "0x4db6a5fdc2e0821caabd364da4ef74228b8bd5b7",
+      "review_status": "initial_review_complete",
+      "identity": "unverified",
+      "product_and_demand": "unverified",
+      "fundamental_promotion": "defer",
+      "execution_review": "独立退出报价净值极低；暂不具备可核实的退出容量，需复核池储备与报价模型。",
+      "quote_check_id": 10,
+      "paper_cohort_changed": false,
+      "overlap_evidence": []
+    },
+    {
+      "case": 11,
+      "token": "0x5686e65192805cf132f1f255e34e4d71dcba0bc0",
+      "review_status": "initial_review_complete",
+      "identity": "unverified",
+      "product_and_demand": "unverified",
+      "fundamental_promotion": "defer",
+      "execution_review": "独立退出报价净值极低；暂不具备可核实的退出容量，需复核池储备与报价模型。",
+      "quote_check_id": 11,
+      "paper_cohort_changed": false,
+      "overlap_evidence": []
+    },
+    {
+      "case": 12,
+      "token": "0x73d36a52a6041788012d086ffc746516895b5920",
+      "review_status": "initial_review_complete",
+      "identity": "unverified",
+      "product_and_demand": "unverified",
+      "fundamental_promotion": "defer",
+      "execution_review": "来源返回指定金额的双向报价；仍缺乏实际成交、税费和可卖出性的完整验证。",
+      "quote_check_id": 12,
+      "paper_cohort_changed": false,
+      "overlap_evidence": []
+    },
+    {
+      "case": 13,
+      "token": "0x7977e264b8832d02a88a7938adc17b4e60422467",
+      "review_status": "initial_review_complete",
+      "identity": "unverified",
+      "product_and_demand": "unverified",
+      "fundamental_promotion": "defer",
+      "execution_review": "来源返回指定金额的双向报价；仍缺乏实际成交、税费和可卖出性的完整验证。",
+      "quote_check_id": 13,
+      "paper_cohort_changed": false,
+      "overlap_evidence": []
+    },
+    {
+      "case": 14,
+      "token": "0x8216d650295a9c9f16926251f350fd808b85097e",
+      "review_status": "initial_review_complete",
+      "identity": "unverified",
+      "product_and_demand": "unverified",
+      "fundamental_promotion": "defer",
+      "execution_review": "报价存在未知，不能确认指定金额的退出路径。",
+      "quote_check_id": 14,
+      "paper_cohort_changed": false,
+      "overlap_evidence": []
+    },
+    {
+      "case": 15,
+      "token": "0x826b674d8e5d2cecc344f662cbe195f3864bd4e4",
+      "review_status": "initial_review_complete",
+      "identity": "unverified",
+      "product_and_demand": "unverified",
+      "fundamental_promotion": "defer",
+      "execution_review": "独立退出报价净值极低；暂不具备可核实的退出容量，需复核池储备与报价模型。",
+      "quote_check_id": 15,
+      "paper_cohort_changed": false,
+      "overlap_evidence": []
+    },
+    {
+      "case": 16,
+      "token": "0x847d45b1e75a093e053b8f91f1b000f990d2f8a0",
+      "review_status": "initial_review_complete",
+      "identity": "unverified",
+      "product_and_demand": "unverified",
+      "fundamental_promotion": "defer",
+      "execution_review": "报价存在未知，不能确认指定金额的退出路径。",
+      "quote_check_id": 16,
+      "paper_cohort_changed": false,
+      "overlap_evidence": []
+    },
+    {
+      "case": 17,
+      "token": "0x853b251de7d7ec66e3c6e9ca9158c32cd8f2579a",
+      "review_status": "initial_review_complete",
+      "identity": "unverified",
+      "product_and_demand": "unverified",
+      "fundamental_promotion": "defer",
+      "execution_review": "来源返回指定金额的双向报价；仍缺乏实际成交、税费和可卖出性的完整验证。",
+      "quote_check_id": 17,
+      "paper_cohort_changed": false,
+      "overlap_evidence": []
+    },
+    {
+      "case": 18,
+      "token": "0x8c09ab3a923110edb6784ec1a677d5a04d0884b9",
+      "review_status": "initial_review_complete",
+      "identity": "unverified",
+      "product_and_demand": "unverified",
+      "fundamental_promotion": "defer",
+      "execution_review": "报价存在未知，不能确认指定金额的退出路径。",
+      "quote_check_id": 18,
+      "paper_cohort_changed": false,
+      "overlap_evidence": []
+    },
+    {
+      "case": 19,
+      "token": "0x935a7ec64a2a308aef2a9ac2464cba80f9d1fb4e",
+      "review_status": "initial_review_complete",
+      "identity": "unverified",
+      "product_and_demand": "unverified",
+      "fundamental_promotion": "defer",
+      "execution_review": "来源返回指定金额的双向报价；仍缺乏实际成交、税费和可卖出性的完整验证。",
+      "quote_check_id": 19,
+      "paper_cohort_changed": false,
+      "overlap_evidence": []
+    },
+    {
+      "case": 20,
+      "token": "0x94766a57b4963d851ead012b42662f1b06b83426",
+      "review_status": "initial_review_complete",
+      "identity": "unverified",
+      "product_and_demand": "unverified",
+      "fundamental_promotion": "defer",
+      "execution_review": "报价存在未知，不能确认指定金额的退出路径。",
+      "quote_check_id": 20,
+      "paper_cohort_changed": false,
+      "overlap_evidence": []
+    }
+  ]
+}

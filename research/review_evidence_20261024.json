@@ -1,0 +1,2279 @@
+{
+  "captured_at": "2026-10-24T05:10:56.498662+00:00",
+  "selection": "first 20 distinct tokens observed by security module, kept regardless of outcome",
+  "records": [
+    {
+      "token": "0x02efbe1ffd8e6c99a035a9332c314ebd147dda6b",
+      "metadata": {
+        "request_id": 442,
+        "observed_at": "2026-10-24T05:04:02.300540+00:00",
+        "name": "X1000XLiquidBGT",
+        "symbol": "LIQUIDBGT",
+        "websites": [],
+        "socials": []
+      },
+      "pool_snapshot": {
+        "id": 480,
+        "request_id": 442,
+        "chain": "base",
+        "pool_address": "0xd49c4c787bfe26abdde796e82a2df932ddcaba33",
+        "observed_at": "2026-10-24T05:04:02.300540+00:00",
+        "source": "dexscreener",
+        "token_address": "0x02efbe1ffd8e6c99a035a9332c314ebd147dda6b",
+        "pool_created_at": "2026-10-24T04:22:23+00:00",
+        "price_usd": "1.301E-10",
+        "liquidity_usd": "0",
+        "fdv_usd": "1",
+        "market_cap_usd": "1",
+        "volume_24h_usd": "1651.73",
+        "buys_24h": 67,
+        "sells_24h": 5,
+        "flags": "[\"holders_unknown\", \"contract_risk_unknown\", \"sellability_unknown\", \"circulating_supply_unverified\"]",
+        "normalizer_version": "2"
+      },
+      "security_observations": {
+        "id": 1,
+        "request_id": 9,
+        "token_address": "0x02efbe1ffd8e6c99a035a9332c314ebd147dda6b",
+        "observed_at": "2026-10-24T04:37:59.200101+00:00",
+        "status": "observed",
+        "assessment": {
+          "version": "1",
+          "risk_fields": {
+            "is_proxy": "reported_absent",
+            "is_mintable": "reported_absent",
+            "can_take_back_ownership": "reported_absent",
+            "owner_change_balance": "reported_absent",
+            "hidden_owner": "reported_absent",
+            "transfer_pausable": "reported_absent",
+            "is_blacklisted": "reported_absent",
+            "slippage_modifiable": "reported_absent",
+            "is_honeypot": "reported_absent",
+            "cannot_sell_all": "unknown"
+          },
+          "flags": [],
+          "owner_address": null,
+          "taxes": {
+            "buy_tax": null,
+            "sell_tax": null
+          },
+          "source_open": "1",
+          "conclusion": "unverified",
+          "limitations": [
+            "provider_report_not_audit",
+            "upgrade_control_not_independently_verified",
+            "role_based_permissions_unknown",
+            "live_sellability_unknown"
+          ]
+        }
+      },
+      "onchain_observations": {
+        "id": 1,
+        "run_id": 5,
+        "token_address": "0x02efbe1ffd8e6c99a035a9332c314ebd147dda6b",
+        "observed_at": "2026-10-24T04:40:51.068658+00:00",
+        "block_number": "0x328ece2",
+        "assessment": {
+          "block_hash": "0x50da1722973fb3832c121b2ceb1040218faf80b4367b407dfe2817e96a82ee70",
+          "block_error": null,
+          "finality": "head_minus_20_not_finalized",
+          "mint_freeze_blacklist": "unknown_without_source_and_role_analysis",
+          "code_error": null,
+          "has_code": true,
+          "code_sha256": "a793cd34f3a8073432a1189b273cea94547caf727ff0e51e5d8d485af2aa687d",
+          "delegatecall_opcode": false,
+          "implementation": "0x0000000000000000000000000000000000000000",
+          "implementation_error": null,
+          "admin": "0x0000000000000000000000000000000000000000",
+          "admin_error": null,
+          "beacon": "0x0000000000000000000000000000000000000000",
+          "beacon_error": null,
+          "owner": null,
+          "owner_error": "rpc_error:{'code': 3, 'message': 'execution reverted'}",
+          "conclusion": "unverified",
+          "limitations": [
+            "standard_slots_only",
+            "zero_owner_does_not_exclude_other_roles",
+            "proxy_slot_does_not_prove_upgrade_authority",
+            "provider_block_may_reorg"
+          ]
+        }
+      },
+      "indexed_holder_snapshots": {
+        "id": 8,
+        "run_id": 24,
+        "token_address": "0x02efbe1ffd8e6c99a035a9332c314ebd147dda6b",
+        "observed_at": "2026-10-24T05:02:25.678506+00:00",
+        "block_number": 53014373,
+        "block_hash": "0x24da00036dec652f5fbc0fddd23af22cefc9ff194d8a5df3ac7d5df59797a27d",
+        "status": "event_supply_reconciled",
+        "holder_count": 18,
+        "total_supply_raw": "5600000000000000000000000000",
+        "event_supply_raw": "5600000000000000000000000000",
+        "top_holders": [
+          {
+            "address": "0x639fa26d6b7132d65ed20ee033313eab59e18bc1",
+            "balance_raw": "2800296578261920459000468289",
+            "fraction": "0.5000529604039143676786550516"
+          },
+          {
+            "address": "0x6aa989249e423b0f843a2b10cab9ea7eca41c7e8",
+            "balance_raw": "1413165918655831553278489935",
+            "fraction": "0.2523510569028270630854446312"
+          },
+          {
+            "address": "0x047dc8b060506e6ca5d0598e27b226c2a746bce7",
+            "balance_raw": "146948493350388231345213338",
+            "fraction": "0.02624080238399789845450238179"
+          },
+          {
+            "address": "0x99dd9f953d960eb51ae36f7b15fe525b97e6624c",
+            "balance_raw": "141736848777017289455161484",
+            "fraction": "0.02531015156732451597413597929"
+          },
+          {
+            "address": "0xeeabc021cee11d9f906d1cbe6531766c8fe8d191",
+            "balance_raw": "139998349062801440055088593",
+            "fraction": "0.02499970518978597143840867732"
+          },
+          {
+            "address": "0x4a8d587ba686199c9b8f8306d187885b1525a778",
+            "balance_raw": "133021830969818700164838856",
+            "fraction": "0.02375389838746762502943551"
+          },
+          {
+            "address": "0xb21328c4c6b0b751a846afaec45329cc06dcb9d8",
+            "balance_raw": "122370758145135535523577405",
+            "fraction": "0.02185192109734563134349596518"
+          },
+          {
+            "address": "0xa67897178070f01ad447e1ec84d5a2f064211f59",
+            "balance_raw": "114629908879850696416372989",
+            "fraction": "0.02046962658568762436006660518"
+          },
+          {
+            "address": "0xbfe36fd493613823101fd31f45ec3a558ee45b54",
+            "balance_raw": "113240929056992106206782464",
+            "fraction": "0.02022159447446287610835401143"
+          },
+          {
+            "address": "0x79ae5b469e370a18743118b7414d7bd830205239",
+            "balance_raw": "110678401944364038755643903",
+            "fraction": "0.01976400034720786406350783982"
+          },
+          {
+            "address": "0x3025102fcc0d46a0988275b7fb3a3a578f057917",
+            "balance_raw": "95015249987465416879652119",
+            "fraction": "0.01696700892633311015708073554"
+          },
+          {
+            "address": "0x27f44322fb16c6f761fdbd4cd66357cd7037923f",
+            "balance_raw": "62689349414537051117063965",
+            "fraction": "0.01119452668116733055661856518"
+          },
+          {
+            "address": "0xf32f9f92dbd00e09866c783d5e007b1b09ec79d2",
+            "balance_raw": "46695113259324763169366215",
+            "fraction": "0.008338413082022279137386824107"
+          },
+          {
+            "address": "0x22f34ee5a93acd3291858c48dcf9640751c2a3d4",
+            "balance_raw": "42042282224098390719281774",
+            "fraction": "0.007507550397160426914157459643"
+          },
+          {
+            "address": "0x2efbdaa6367d361dbc058fdfd7cd0752303998b2",
+            "balance_raw": "37305333289039121712675789",
+            "fraction": "0.006661666658756986020120676607"
+          },
+          {
+            "address": "0xd49c4c787bfe26abdde796e82a2df932ddcaba33",
+            "balance_raw": "37205245265135013803403843",
+            "fraction": "0.006643793797345538179179257679"
+          },
+          {
+            "address": "0x76ff501f75147734863c9a3af85492c8673a7f7a",
+            "balance_raw": "21601286716742715780778244",
+            "fraction": "0.003857372627989770675138972143"
+          },
+          {
+            "address": "0x51a16783b1cb3f70a7b5802850f6dcc7d352970e",
+            "balance_raw": "21358122739537476616140795",
+            "fraction": "0.00381395048920312082431085625"
+          }
+        ],
+        "limitations": "[\"only_top_three_balanceOf_spot_checks_not_full_balance_verification\", \"rebase_or_dishonest_events_possible\", \"first_code_assumes_no_redeployment\", \"LPs_and_contracts_not_excluded\", \"head_minus_20_not_finalized\"]",
+        "caught_up": 1,
+        "balance_checks": [
+          {
+            "address": "0x639fa26d6b7132d65ed20ee033313eab59e18bc1",
+            "expected_raw": "2800296578261920459000468289",
+            "actual_raw": "2800296578261920459000468289",
+            "error": null
+          },
+          {
+            "address": "0x6aa989249e423b0f843a2b10cab9ea7eca41c7e8",
+            "expected_raw": "1413165918655831553278489935",
+            "actual_raw": "1413165918655831553278489935",
+            "error": null
+          },
+          {
+            "address": "0x047dc8b060506e6ca5d0598e27b226c2a746bce7",
+            "expected_raw": "146948493350388231345213338",
+            "actual_raw": "146948493350388231345213338",
+            "error": null
+          }
+        ]
+      },
+      "review_quote_checks": {
+        "id": 1,
+        "run_id": 27,
+        "token_address": "0x02efbe1ffd8e6c99a035a9332c314ebd147dda6b",
+        "checked_at": "2026-10-24T05:07:19.456585+00:00",
+        "buy_quote_id": 35,
+        "sell_quote_id": 36,
+        "status": "roundtrip_quoted",
+        "roundtrip_return": "-1.000052542153820320836339229"
+      }
+    },
+    {
+      "token": "0x0b57ef43dd3854d9ce3c0d823183ee11b7ca033b",
+      "metadata": {
+        "request_id": 442,
+        "observed_at": "2026-10-24T05:04:02.300540+00:00",
+        "name": "United Dividend Trust Fund",
+        "symbol": "UDTF",
+        "websites": [],
+        "socials": []
+      },
+      "pool_snapshot": {
+        "id": 474,
+        "request_id": 442,
+        "chain": "base",
+        "pool_address": "0x6074b4138699c6e1b757ba7da1adf3ef828eca1c0d6f89c8d8019a6cac32e738",
+        "observed_at": "2026-10-24T05:04:02.300540+00:00",
+        "source": "dexscreener",
+        "token_address": "0x0b57ef43dd3854d9ce3c0d823183ee11b7ca033b",
+        "pool_created_at": "2026-10-24T04:21:49+00:00",
+        "price_usd": "5.080E-8",
+        "liquidity_usd": "58.7",
+        "fdv_usd": "465",
+        "market_cap_usd": "465",
+        "volume_24h_usd": "30702.12",
+        "buys_24h": 33,
+        "sells_24h": 29,
+        "flags": "[\"holders_unknown\", \"contract_risk_unknown\", \"sellability_unknown\", \"circulating_supply_unverified\"]",
+        "normalizer_version": "2"
+      },
+      "security_observations": {
+        "id": 2,
+        "request_id": 10,
+        "token_address": "0x0b57ef43dd3854d9ce3c0d823183ee11b7ca033b",
+        "observed_at": "2026-10-24T04:38:01.662287+00:00",
+        "status": "observed",
+        "assessment": {
+          "version": "1",
+          "risk_fields": {
+            "is_proxy": "unknown",
+            "is_mintable": "unknown",
+            "can_take_back_ownership": "unknown",
+            "owner_change_balance": "unknown",
+            "hidden_owner": "unknown",
+            "transfer_pausable": "unknown",
+            "is_blacklisted": "unknown",
+            "slippage_modifiable": "unknown",
+            "is_honeypot": "unknown",
+            "cannot_sell_all": "unknown"
+          },
+          "flags": [],
+          "owner_address": "",
+          "taxes": {
+            "buy_tax": null,
+            "sell_tax": null
+          },
+          "source_open": null,
+          "conclusion": "unverified",
+          "limitations": [
+            "provider_report_not_audit",
+            "upgrade_control_not_independently_verified",
+            "role_based_permissions_unknown",
+            "live_sellability_unknown"
+          ]
+        }
+      },
+      "onchain_observations": {
+        "id": 2,
+        "run_id": 5,
+        "token_address": "0x0b57ef43dd3854d9ce3c0d823183ee11b7ca033b",
+        "observed_at": "2026-10-24T04:40:54.168274+00:00",
+        "block_number": "0x328ece2",
+        "assessment": {
+          "block_hash": "0x50da1722973fb3832c121b2ceb1040218faf80b4367b407dfe2817e96a82ee70",
+          "block_error": null,
+          "finality": "head_minus_20_not_finalized",
+          "mint_freeze_blacklist": "unknown_without_source_and_role_analysis",
+          "code_error": null,
+          "has_code": true,
+          "code_sha256": "750ab7785fc2c805c87ad6b7a34ff9692f3cd8acfd0ba216dbc3db463cf52763",
+          "delegatecall_opcode": false,
+          "implementation": "0x0000000000000000000000000000000000000000",
+          "implementation_error": null,
+          "admin": "0x0000000000000000000000000000000000000000",
+          "admin_error": null,
+          "beacon": "0x0000000000000000000000000000000000000000",
+          "beacon_error": null,
+          "owner": "0x660eaaedebc968f8f3694354fa8ec0b4c5ba8d12",
+          "owner_error": null,
+          "conclusion": "unverified",
+          "limitations": [
+            "standard_slots_only",
+            "zero_owner_does_not_exclude_other_roles",
+            "proxy_slot_does_not_prove_upgrade_authority",
+            "provider_block_may_reorg"
+          ]
+        }
+      },
+      "indexed_holder_snapshots": null,
+      "review_quote_checks": {
+        "id": 2,
+        "run_id": 27,
+        "token_address": "0x0b57ef43dd3854d9ce3c0d823183ee11b7ca033b",
+        "checked_at": "2026-10-24T05:07:21.026203+00:00",
+        "buy_quote_id": 37,
+        "sell_quote_id": 38,
+        "status": "exit_unknown",
+        "roundtrip_return": null
+      }
+    },
+    {
+      "token": "0x0bdb412562a84e2d3e6cd9891c3e776510aefa6e",
+      "metadata": {
+        "request_id": 442,
+        "observed_at": "2026-10-24T05:04:02.300540+00:00",
+        "name": "Agent ID",
+        "symbol": ".AI",
+        "websites": [],
+        "socials": []
+      },
+      "pool_snapshot": {
+        "id": 473,
+        "request_id": 442,
+        "chain": "base",
+        "pool_address": "0x5f0ce6f705379423d9898d9ff84d977c84ed1d5d",
+        "observed_at": "2026-10-24T05:04:02.300540+00:00",
+        "source": "dexscreener",
+        "token_address": "0x0bdb412562a84e2d3e6cd9891c3e776510aefa6e",
+        "pool_created_at": "2026-10-24T04:11:33+00:00",
+        "price_usd": "1.226E-10",
+        "liquidity_usd": "0",
+        "fdv_usd": "1",
+        "market_cap_usd": "1",
+        "volume_24h_usd": "1656.99",
+        "buys_24h": 64,
+        "sells_24h": 8,
+        "flags": "[\"holders_unknown\", \"contract_risk_unknown\", \"sellability_unknown\", \"circulating_supply_unverified\"]",
+        "normalizer_version": "2"
+      },
+      "security_observations": {
+        "id": 3,
+        "request_id": 11,
+        "token_address": "0x0bdb412562a84e2d3e6cd9891c3e776510aefa6e",
+        "observed_at": "2026-10-24T04:38:04.121909+00:00",
+        "status": "observed",
+        "assessment": {
+          "version": "1",
+          "risk_fields": {
+            "is_proxy": "unknown",
+            "is_mintable": "unknown",
+            "can_take_back_ownership": "unknown",
+            "owner_change_balance": "unknown",
+            "hidden_owner": "unknown",
+            "transfer_pausable": "unknown",
+            "is_blacklisted": "unknown",
+            "slippage_modifiable": "unknown",
+            "is_honeypot": "unknown",
+            "cannot_sell_all": "unknown"
+          },
+          "flags": [],
+          "owner_address": "",
+          "taxes": {
+            "buy_tax": null,
+            "sell_tax": null
+          },
+          "source_open": null,
+          "conclusion": "unverified",
+          "limitations": [
+            "provider_report_not_audit",
+            "upgrade_control_not_independently_verified",
+            "role_based_permissions_unknown",
+            "live_sellability_unknown"
+          ]
+        }
+      },
+      "onchain_observations": {
+        "id": 3,
+        "run_id": 5,
+        "token_address": "0x0bdb412562a84e2d3e6cd9891c3e776510aefa6e",
+        "observed_at": "2026-10-24T04:40:57.254510+00:00",
+        "block_number": "0x328ece2",
+        "assessment": {
+          "block_hash": "0x50da1722973fb3832c121b2ceb1040218faf80b4367b407dfe2817e96a82ee70",
+          "block_error": null,
+          "finality": "head_minus_20_not_finalized",
+          "mint_freeze_blacklist": "unknown_without_source_and_role_analysis",
+          "code_error": null,
+          "has_code": true,
+          "code_sha256": "e687c5a02755aa525c4ac39c47afa71b60751437ea1172c1b63620bc0d8e8525",
+          "delegatecall_opcode": false,
+          "implementation": "0x0000000000000000000000000000000000000000",
+          "implementation_error": null,
+          "admin": "0x0000000000000000000000000000000000000000",
+          "admin_error": null,
+          "beacon": "0x0000000000000000000000000000000000000000",
+          "beacon_error": null,
+          "owner": null,
+          "owner_error": "rpc_error:{'code': 3, 'message': 'execution reverted'}",
+          "conclusion": "unverified",
+          "limitations": [
+            "standard_slots_only",
+            "zero_owner_does_not_exclude_other_roles",
+            "proxy_slot_does_not_prove_upgrade_authority",
+            "provider_block_may_reorg"
+          ]
+        }
+      },
+      "indexed_holder_snapshots": {
+        "id": 6,
+        "run_id": 18,
+        "token_address": "0x0bdb412562a84e2d3e6cd9891c3e776510aefa6e",
+        "observed_at": "2026-10-24T04:58:52.848379+00:00",
+        "block_number": 53014269,
+        "block_hash": "0xa39257fda29643b95e7473a3e8d08bd984b88b301793a204f70a322795f8ff17",
+        "status": "event_supply_reconciled",
+        "holder_count": 17,
+        "total_supply_raw": "5600000000000000000000000000",
+        "event_supply_raw": "5600000000000000000000000000",
+        "top_holders": [
+          {
+            "address": "0x639fa26d6b7132d65ed20ee033313eab59e18bc1",
+            "balance_raw": "2821278079218708867957155271",
+            "fraction": "0.5037996570033408692780634412"
+          },
+          {
+            "address": "0x6aa989249e423b0f843a2b10cab9ea7eca41c7e8",
+            "balance_raw": "1425140969701762819058130654",
+            "fraction": "0.2544894588753147891175233311"
+          },
+          {
+            "address": "0x0cab6b26535060431cb8866200b73b696788e926",
+            "balance_raw": "150410662866000137733312149",
+            "fraction": "0.02685904694035716745237716946"
+          },
+          {
+            "address": "0x30a0d8d5d3f44f9ea64f09c788c91e8e57533a88",
+            "balance_raw": "140862154865059587194803314",
+            "fraction": "0.02515395622590349771335773464"
+          },
+          {
+            "address": "0x15bc664806630bc40c4c330f2ba0ade60546db01",
+            "balance_raw": "130542504927706364612816382",
+            "fraction": "0.0233111615942332793951457825"
+          },
+          {
+            "address": "0x0cb9f8e20f54cc3e81e1e8360d3a91e373aa7bd2",
+            "balance_raw": "129416883236255722697511483",
+            "fraction": "0.02311015772075995048169847911"
+          },
+          {
+            "address": "0x0c4be2eec1eccf1ab46a8038a138b4de10021b3d",
+            "balance_raw": "127486291244738353771674355",
+            "fraction": "0.02276540915084613460208470625"
+          },
+          {
+            "address": "0x0c5e8ab5dc6e4c0b92bbae8e0b605b8b2dfa808a",
+            "balance_raw": "112607293286832821343086810",
+            "fraction": "0.02010844522979157523983693036"
+          },
+          {
+            "address": "0x0f7eed1328b7051ec77cc153ba7f724b8ec48f25",
+            "balance_raw": "100640546193225289012593180",
+            "fraction": "0.01797152610593308732367735357"
+          },
+          {
+            "address": "0x0c5d5c4134b41058d723c404752b50637fea087b",
+            "balance_raw": "91995842458273047857989315",
+            "fraction": "0.01642782901040590140321237768"
+          },
+          {
+            "address": "0x0c39a5de7c684fb9489cf0a9d64f79babcfdfa4a",
+            "balance_raw": "89466943989725215700676901",
+            "fraction": "0.01597623999816521708940658946"
+          },
+          {
+            "address": "0x0cbebd785cb919ccf5d935effb3250a45b0bd1a8",
+            "balance_raw": "88727492709320487265913343",
+            "fraction": "0.01584419512666437272605595411"
+          },
+          {
+            "address": "0x23db72d90d3250ddee5c557eb0db484ab2fb58f8",
+            "balance_raw": "64928595002472003379953779",
+            "fraction": "0.01159439196472714346070603196"
+          },
+          {
+            "address": "0x0c637c10a5ae5f1b393ea9972f616b8d6022f15d",
+            "balance_raw": "60958572900074340165018195",
+            "fraction": "0.01088545944644184645803896339"
+          },
+          {
+            "address": "0x5f0ce6f705379423d9898d9ff84d977c84ed1d5d",
+            "balance_raw": "39509736265981499212820762",
+            "fraction": "0.0070553100474966962880037075"
+          },
+          {
+            "address": "0x158559cda6c615c2b6f5d33c937a80f6d2c430d7",
+            "balance_raw": "21535236241123524263578925",
+            "fraction": "0.003845577900200629332781950893"
+          },
+          {
+            "address": "0x934f32a7afbb21c3c268fdba2d3e5fab9520e2aa",
+            "balance_raw": "4492194892739918772965182",
+            "fraction": "0.0008021776594178426380294967857"
+          }
+        ],
+        "limitations": "[\"only_top_three_balanceOf_spot_checks_not_full_balance_verification\", \"rebase_or_dishonest_events_possible\", \"first_code_assumes_no_redeployment\", \"LPs_and_contracts_not_excluded\", \"head_minus_20_not_finalized\"]",
+        "caught_up": 1,
+        "balance_checks": [
+          {
+            "address": "0x639fa26d6b7132d65ed20ee033313eab59e18bc1",
+            "expected_raw": "2821278079218708867957155271",
+            "actual_raw": "2821278079218708867957155271",
+            "error": null
+          },
+          {
+            "address": "0x6aa989249e423b0f843a2b10cab9ea7eca41c7e8",
+            "expected_raw": "1425140969701762819058130654",
+            "actual_raw": "1425140969701762819058130654",
+            "error": null
+          },
+          {
+            "address": "0x0cab6b26535060431cb8866200b73b696788e926",
+            "expected_raw": "150410662866000137733312149",
+            "actual_raw": "150410662866000137733312149",
+            "error": null
+          }
+        ]
+      },
+      "review_quote_checks": {
+        "id": 3,
+        "run_id": 27,
+        "token_address": "0x0bdb412562a84e2d3e6cd9891c3e776510aefa6e",
+        "checked_at": "2026-10-24T05:07:22.681213+00:00",
+        "buy_quote_id": 39,
+        "sell_quote_id": 40,
+        "status": "roundtrip_quoted",
+        "roundtrip_return": "-1.000052500022659736152173834"
+      }
+    },
+    {
+      "token": "0x18a08e2a96edb781729701e1cace6f29eb992b4a",
+      "metadata": {
+        "request_id": 443,
+        "observed_at": "2026-10-24T05:04:02.773384+00:00",
+        "name": "ANTHROPIC",
+        "symbol": "ANTHROPIC",
+        "websites": [],
+        "socials": []
+      },
+      "pool_snapshot": {
+        "id": 504,
+        "request_id": 443,
+        "chain": "base",
+        "pool_address": "0x99bfceb39ccebf3c68f9f0b60d1ece674da549ef",
+        "observed_at": "2026-10-24T05:04:02.773384+00:00",
+        "source": "dexscreener",
+        "token_address": "0x18a08e2a96edb781729701e1cace6f29eb992b4a",
+        "pool_created_at": "2026-10-24T03:46:13+00:00",
+        "price_usd": "2.388E-13",
+        "liquidity_usd": "0",
+        "fdv_usd": null,
+        "market_cap_usd": null,
+        "volume_24h_usd": "3222.37",
+        "buys_24h": 56,
+        "sells_24h": 10,
+        "flags": "[\"holders_unknown\", \"contract_risk_unknown\", \"sellability_unknown\", \"circulating_supply_unverified\", \"fdv_usd_missing\", \"market_cap_usd_missing\"]",
+        "normalizer_version": "2"
+      },
+      "security_observations": {
+        "id": 4,
+        "request_id": 12,
+        "token_address": "0x18a08e2a96edb781729701e1cace6f29eb992b4a",
+        "observed_at": "2026-10-24T04:38:06.902088+00:00",
+        "status": "observed",
+        "assessment": {
+          "version": "1",
+          "risk_fields": {
+            "is_proxy": "unknown",
+            "is_mintable": "unknown",
+            "can_take_back_ownership": "unknown",
+            "owner_change_balance": "unknown",
+            "hidden_owner": "unknown",
+            "transfer_pausable": "unknown",
+            "is_blacklisted": "unknown",
+            "slippage_modifiable": "unknown",
+            "is_honeypot": "unknown",
+            "cannot_sell_all": "reported_absent"
+          },
+          "flags": [],
+          "owner_address": "",
+          "taxes": {
+            "buy_tax": "0",
+            "sell_tax": "0"
+          },
+          "source_open": null,
+          "conclusion": "unverified",
+          "limitations": [
+            "provider_report_not_audit",
+            "upgrade_control_not_independently_verified",
+            "role_based_permissions_unknown",
+            "live_sellability_unknown"
+          ]
+        }
+      },
+      "onchain_observations": {
+        "id": 4,
+        "run_id": 17,
+        "token_address": "0x18a08e2a96edb781729701e1cace6f29eb992b4a",
+        "observed_at": "2026-10-24T04:58:25.854352+00:00",
+        "block_number": "0x328eeec",
+        "assessment": {
+          "block_hash": "0xbeedd386253623176542e52e276b16f00ff58c824fdf6c78c5bb93241a6e568d",
+          "block_error": null,
+          "finality": "head_minus_20_not_finalized",
+          "mint_freeze_blacklist": "unknown_without_source_and_role_analysis",
+          "code_error": null,
+          "has_code": true,
+          "code_sha256": "fff7cc60fa32a890ccc8f42b772c45e2d5130289b41d0b9be52b9def736da1eb",
+          "delegatecall_opcode": true,
+          "implementation": "0x0000000000000000000000000000000000000000",
+          "implementation_error": null,
+          "admin": "0x0000000000000000000000000000000000000000",
+          "admin_error": null,
+          "beacon": "0x0000000000000000000000000000000000000000",
+          "beacon_error": null,
+          "owner": null,
+          "owner_error": "rpc_error:{'code': 3, 'message': 'execution reverted'}",
+          "conclusion": "unverified",
+          "limitations": [
+            "standard_slots_only",
+            "zero_owner_does_not_exclude_other_roles",
+            "proxy_slot_does_not_prove_upgrade_authority",
+            "provider_block_may_reorg"
+          ]
+        }
+      },
+      "indexed_holder_snapshots": {
+        "id": 2,
+        "run_id": 11,
+        "token_address": "0x18a08e2a96edb781729701e1cace6f29eb992b4a",
+        "observed_at": "2026-10-24T04:53:32.883481+00:00",
+        "block_number": 53014073,
+        "block_hash": "0x82555ea40cdf8028fb3d8d791eef0fc9aeb7db2f19c69bb08bfec9d8494c46fc",
+        "status": "event_supply_reconciled",
+        "holder_count": 17,
+        "total_supply_raw": "5600000000000000000000000000",
+        "event_supply_raw": "5600000000000000000000000000",
+        "top_holders": [
+          {
+            "address": "0x99bfceb39ccebf3c68f9f0b60d1ece674da549ef",
+            "balance_raw": "1532097477435855176163228717",
+            "fraction": "0.2735888352564027100291479852"
+          },
+          {
+            "address": "0x6aa989249e423b0f843a2b10cab9ea7eca41c7e8",
+            "balance_raw": "1218623225284717336175813639",
+            "fraction": "0.2176112902294138100313952927"
+          },
+          {
+            "address": "0x639fa26d6b7132d65ed20ee033313eab59e18bc1",
+            "balance_raw": "914852782384883552181971013",
+            "fraction": "0.1633665682830149200324948238"
+          },
+          {
+            "address": "0xf25f5911f8dc0da1223981f7144ebd1c9f3b1da4",
+            "balance_raw": "267637639022876390445006347",
+            "fraction": "0.04779243553979935543660827625"
+          },
+          {
+            "address": "0x701195f1ff3f1c9f8ced951cacc9608cbce1881f",
+            "balance_raw": "240908979054231321693412009",
+            "fraction": "0.04301946054539845030239500161"
+          },
+          {
+            "address": "0x02f7883f087228aa93b49adad6c7ed68a6fe4f1a",
+            "balance_raw": "233939438131467227706598419",
+            "fraction": "0.04177489966633343351903543196"
+          },
+          {
+            "address": "0xbaddbe5bee2007916abeb40f5823d36739913d29",
+            "balance_raw": "177108048005743804287003331",
+            "fraction": "0.03162643714388282219410773768"
+          },
+          {
+            "address": "0x0d4aa6f24630e231eaf708fe80e863d2645a4aca",
+            "balance_raw": "164055782836961161956108011",
+            "fraction": "0.02929567550660020749216214482"
+          },
+          {
+            "address": "0x1c3e45f7fa09349fe63d0b944404a680dd5a9165",
+            "balance_raw": "161056316971751220475176943",
+            "fraction": "0.02876005660209843222771016839"
+          },
+          {
+            "address": "0xeaf7ca5704f523a23d5db4286a355c4810be3d56",
+            "balance_raw": "149637990231494525628493315",
+            "fraction": "0.02672106968419545100508809196"
+          },
+          {
+            "address": "0x90b4a5aab23291eb7b9f29b5ff9fe0fc980dfe06",
+            "balance_raw": "131857820154045649677479918",
+            "fraction": "0.02354603931322243744240712821"
+          },
+          {
+            "address": "0xe184eecae5d1209ca68e156a33f05bc579b7d61e",
+            "balance_raw": "126262122535604134848018179",
+            "fraction": "0.02254680759564359550857467482"
+          },
+          {
+            "address": "0xe33a78204e4f2737187bf1c5d9426eba8dd2e7f3",
+            "balance_raw": "92579185110434164893144941",
+            "fraction": "0.01653199734114895801663302518"
+          },
+          {
+            "address": "0xf90134784e94c2aeb3e535aaa9890deba14941be",
+            "balance_raw": "80756996850499383770142518",
+            "fraction": "0.01442089229473203281609687821"
+          },
+          {
+            "address": "0x9ea5aca14e9988af1c93070069e475afab9e2bde",
+            "balance_raw": "49397971617679267231706520",
+            "fraction": "0.008821066360299869148519021429"
+          },
+          {
+            "address": "0xe276f96e534686db17e5945a52dfadff4912aba5",
+            "balance_raw": "40811403407556023040205611",
+            "fraction": "0.007287750608492146971465287679"
+          },
+          {
+            "address": "0x459bc2c21cf5b61b91a366a5a119c2783d36c886",
+            "balance_raw": "18416820964199659826490569",
+            "fraction": "0.003288718029321367826159030179"
+          }
+        ],
+        "limitations": "[\"event_derived_not_independently_balance_verified\", \"rebase_or_dishonest_events_possible\", \"first_code_assumes_no_redeployment\", \"LPs_and_contracts_not_excluded\", \"head_minus_20_not_finalized\"]",
+        "caught_up": 1,
+        "balance_checks": []
+      },
+      "review_quote_checks": {
+        "id": 4,
+        "run_id": 27,
+        "token_address": "0x18a08e2a96edb781729701e1cace6f29eb992b4a",
+        "checked_at": "2026-10-24T05:07:24.317738+00:00",
+        "buy_quote_id": 41,
+        "sell_quote_id": 42,
+        "status": "roundtrip_quoted",
+        "roundtrip_return": "-1.000071184741595256191201599"
+      }
+    },
+    {
+      "token": "0x1de8a433d418a27f3ecee1219a37d512a66520bd",
+      "metadata": {
+        "request_id": 443,
+        "observed_at": "2026-10-24T05:04:02.773384+00:00",
+        "name": "United Energy Reserve",
+        "symbol": "UER",
+        "websites": [],
+        "socials": []
+      },
+      "pool_snapshot": {
+        "id": 500,
+        "request_id": 443,
+        "chain": "base",
+        "pool_address": "0x7b57430cbe767d47d1547d23dd2940b16ff5e8bced32f399c1b75efb3e2b5b6b",
+        "observed_at": "2026-10-24T05:04:02.773384+00:00",
+        "source": "dexscreener",
+        "token_address": "0x1de8a433d418a27f3ecee1219a37d512a66520bd",
+        "pool_created_at": "2026-10-24T03:49:29+00:00",
+        "price_usd": "0.004764",
+        "liquidity_usd": "48593.5",
+        "fdv_usd": "45878617",
+        "market_cap_usd": "45878617",
+        "volume_24h_usd": "85859.32",
+        "buys_24h": 153,
+        "sells_24h": 148,
+        "flags": "[\"holders_unknown\", \"contract_risk_unknown\", \"sellability_unknown\", \"circulating_supply_unverified\"]",
+        "normalizer_version": "2"
+      },
+      "security_observations": {
+        "id": 5,
+        "request_id": 13,
+        "token_address": "0x1de8a433d418a27f3ecee1219a37d512a66520bd",
+        "observed_at": "2026-10-24T04:38:09.360996+00:00",
+        "status": "observed",
+        "assessment": {
+          "version": "1",
+          "risk_fields": {
+            "is_proxy": "unknown",
+            "is_mintable": "unknown",
+            "can_take_back_ownership": "unknown",
+            "owner_change_balance": "unknown",
+            "hidden_owner": "unknown",
+            "transfer_pausable": "unknown",
+            "is_blacklisted": "unknown",
+            "slippage_modifiable": "unknown",
+            "is_honeypot": "unknown",
+            "cannot_sell_all": "unknown"
+          },
+          "flags": [],
+          "owner_address": "",
+          "taxes": {
+            "buy_tax": null,
+            "sell_tax": null
+          },
+          "source_open": null,
+          "conclusion": "unverified",
+          "limitations": [
+            "provider_report_not_audit",
+            "upgrade_control_not_independently_verified",
+            "role_based_permissions_unknown",
+            "live_sellability_unknown"
+          ]
+        }
+      },
+      "onchain_observations": {
+        "id": 5,
+        "run_id": 25,
+        "token_address": "0x1de8a433d418a27f3ecee1219a37d512a66520bd",
+        "observed_at": "2026-10-24T05:02:52.036532+00:00",
+        "block_number": "0x328ef71",
+        "assessment": {
+          "block_hash": "0xf1ea29890946ac40740dd38387b6cd809aa5425619089e0c321a1cec26547489",
+          "block_error": null,
+          "finality": "head_minus_20_not_finalized",
+          "mint_freeze_blacklist": "unknown_without_source_and_role_analysis",
+          "code_error": null,
+          "has_code": true,
+          "code_sha256": "cd6526421bef0ac1bd6109fc6b1b90010125176f30807563c411fa9d191bb30d",
+          "delegatecall_opcode": false,
+          "implementation": "0x0000000000000000000000000000000000000000",
+          "implementation_error": null,
+          "admin": "0x0000000000000000000000000000000000000000",
+          "admin_error": null,
+          "beacon": "0x0000000000000000000000000000000000000000",
+          "beacon_error": null,
+          "owner": "0x660eaaedebc968f8f3694354fa8ec0b4c5ba8d12",
+          "owner_error": null,
+          "conclusion": "unverified",
+          "limitations": [
+            "standard_slots_only",
+            "zero_owner_does_not_exclude_other_roles",
+            "proxy_slot_does_not_prove_upgrade_authority",
+            "provider_block_may_reorg"
+          ]
+        }
+      },
+      "indexed_holder_snapshots": {
+        "id": 3,
+        "run_id": 11,
+        "token_address": "0x1de8a433d418a27f3ecee1219a37d512a66520bd",
+        "observed_at": "2026-10-24T04:54:48.877694+00:00",
+        "block_number": 53014073,
+        "block_hash": "0x82555ea40cdf8028fb3d8d791eef0fc9aeb7db2f19c69bb08bfec9d8494c46fc",
+        "status": "event_supply_reconciled",
+        "holder_count": 2310,
+        "total_supply_raw": "10000000000000000000000000000",
+        "event_supply_raw": "10000000000000000000000000000",
+        "top_holders": [
+          {
+            "address": "0x1de8a433d418a27f3ecee1219a37d512a66520bd",
+            "balance_raw": "8000000000000000000000000000",
+            "fraction": "0.8"
+          },
+          {
+            "address": "0xfbbd8cc8c3272e0e52abc8f666bf3ae9c70a80ab",
+            "balance_raw": "1621901720000388838776778419",
+            "fraction": "0.1621901720000388838776778419"
+          },
+          {
+            "address": "0x000000000000000000000000000000000000dead",
+            "balance_raw": "370828600000000001066414904",
+            "fraction": "0.0370828600000000001066414904"
+          },
+          {
+            "address": "0x498581ff718922c3f8e6a244956af099b2652b2b",
+            "balance_raw": "7253856305811287020315595",
+            "fraction": "0.0007253856305811287020315595"
+          },
+          {
+            "address": "0x70d849f450c71f7e421f341fc829db6a91fd3c2a",
+            "balance_raw": "158737983797262497376",
+            "fraction": "1.58737983797262497376E-8"
+          },
+          {
+            "address": "0xc0b64f7bd67c4372d88e0c426aebf4206c15d564",
+            "balance_raw": "156547595151899025490",
+            "fraction": "1.5654759515189902549E-8"
+          },
+          {
+            "address": "0xbaffbc21c478416627a9d9d8db60afea31cef418",
+            "balance_raw": "132707421720011499190",
+            "fraction": "1.3270742172001149919E-8"
+          },
+          {
+            "address": "0xc6096d3cf414466a222c75da8cfdbcb61beb8d26",
+            "balance_raw": "60363324813354485050",
+            "fraction": "6.036332481335448505E-9"
+          },
+          {
+            "address": "0x58e4edb8325b708cbeec38e7fa3b5f5e5082b616",
+            "balance_raw": "32603342390608983976",
+            "fraction": "3.2603342390608983976E-9"
+          },
+          {
+            "address": "0xcb8ea58d54c0bc007b4efe3a6bd7dcde61b8e9a7",
+            "balance_raw": "9995471000000000000",
+            "fraction": "9.995471E-10"
+          },
+          {
+            "address": "0xeb7382b3bd47b028b3106457838755a34982270f",
+            "balance_raw": "9991894000000000000",
+            "fraction": "9.991894E-10"
+          },
+          {
+            "address": "0xc0a5b1a1d7552dad13d8c8441be816433a9e0dc2",
+            "balance_raw": "9991691000000000000",
+            "fraction": "9.991691E-10"
+          },
+          {
+            "address": "0x5e0593dbd5a40d0b262cc028d18aef327dd7d398",
+            "balance_raw": "9990746000000000000",
+            "fraction": "9.990746E-10"
+          },
+          {
+            "address": "0x20814be171929f4436b15704de526ee54683c151",
+            "balance_raw": "9989059000000000000",
+            "fraction": "9.989059E-10"
+          },
+          {
+            "address": "0xc508c5ca52f43456a32be6da1bc36f930da32ea6",
+            "balance_raw": "9985818000000000000",
+            "fraction": "9.985818E-10"
+          },
+          {
+            "address": "0xc1c8074e211464efd9ebfb8a2dcbb090dda02f51",
+            "balance_raw": "9984117000000000000",
+            "fraction": "9.984117E-10"
+          },
+          {
+            "address": "0xca827d8cb4103cccaf8d8dcfb3b9d464cc9df3ae",
+            "balance_raw": "9983417000000000000",
+            "fraction": "9.983417E-10"
+          },
+          {
+            "address": "0xed4c198c58c1e2165ac64530d640d3bc7ca5a85c",
+            "balance_raw": "9979707000000000000",
+            "fraction": "9.979707E-10"
+          },
+          {
+            "address": "0x411008067d8922273a09461a2542d7cf6b874950",
+            "balance_raw": "9972826000000000000",
+            "fraction": "9.972826E-10"
+          },
+          {
+            "address": "0x6aeb2289acc1ee2d34de243e7215170ee51c39cc",
+            "balance_raw": "9969438000000000000",
+            "fraction": "9.969438E-10"
+          }
+        ],
+        "limitations": "[\"event_derived_not_independently_balance_verified\", \"rebase_or_dishonest_events_possible\", \"first_code_assumes_no_redeployment\", \"LPs_and_contracts_not_excluded\", \"head_minus_20_not_finalized\"]",
+        "caught_up": 1,
+        "balance_checks": []
+      },
+      "review_quote_checks": {
+        "id": 5,
+        "run_id": 27,
+        "token_address": "0x1de8a433d418a27f3ecee1219a37d512a66520bd",
+        "checked_at": "2026-10-24T05:07:25.928960+00:00",
+        "buy_quote_id": 43,
+        "sell_quote_id": 44,
+        "status": "roundtrip_quoted",
+        "roundtrip_return": "-0.0072697890572711112915978118"
+      }
+    },
+    {
+      "token": "0x257a97160b528b2c09cd5ca5d22050e59eb88c91",
+      "metadata": {
+        "request_id": 443,
+        "observed_at": "2026-10-24T05:04:02.773384+00:00",
+        "name": "X1000XLiquidBGT",
+        "symbol": "LIQUIDBGT",
+        "websites": [],
+        "socials": []
+      },
+      "pool_snapshot": {
+        "id": 486,
+        "request_id": 443,
+        "chain": "base",
+        "pool_address": "0xddd0b457d6ca89f3914cbf9fc7c74b37e9ad7899",
+        "observed_at": "2026-10-24T05:04:02.773384+00:00",
+        "source": "dexscreener",
+        "token_address": "0x257a97160b528b2c09cd5ca5d22050e59eb88c91",
+        "pool_created_at": "2026-10-24T04:17:27+00:00",
+        "price_usd": "2.870E-13",
+        "liquidity_usd": "0",
+        "fdv_usd": null,
+        "market_cap_usd": null,
+        "volume_24h_usd": "3451.17",
+        "buys_24h": 53,
+        "sells_24h": 13,
+        "flags": "[\"holders_unknown\", \"contract_risk_unknown\", \"sellability_unknown\", \"circulating_supply_unverified\", \"fdv_usd_missing\", \"market_cap_usd_missing\"]",
+        "normalizer_version": "2"
+      },
+      "security_observations": {
+        "id": 6,
+        "request_id": 14,
+        "token_address": "0x257a97160b528b2c09cd5ca5d22050e59eb88c91",
+        "observed_at": "2026-10-24T04:38:11.818254+00:00",
+        "status": "observed",
+        "assessment": {
+          "version": "1",
+          "risk_fields": {
+            "is_proxy": "reported_absent",
+            "is_mintable": "reported_absent",
+            "can_take_back_ownership": "reported_absent",
+            "owner_change_balance": "reported_absent",
+            "hidden_owner": "reported_absent",
+            "transfer_pausable": "reported_absent",
+            "is_blacklisted": "reported_absent",
+            "slippage_modifiable": "reported_absent",
+            "is_honeypot": "reported_absent",
+            "cannot_sell_all": "unknown"
+          },
+          "flags": [],
+          "owner_address": null,
+          "taxes": {
+            "buy_tax": null,
+            "sell_tax": null
+          },
+          "source_open": "1",
+          "conclusion": "unverified",
+          "limitations": [
+            "provider_report_not_audit",
+            "upgrade_control_not_independently_verified",
+            "role_based_permissions_unknown",
+            "live_sellability_unknown"
+          ]
+        }
+      },
+      "onchain_observations": null,
+      "indexed_holder_snapshots": {
+        "id": 4,
+        "run_id": 11,
+        "token_address": "0x257a97160b528b2c09cd5ca5d22050e59eb88c91",
+        "observed_at": "2026-10-24T04:56:02.254840+00:00",
+        "block_number": 53014073,
+        "block_hash": "0x82555ea40cdf8028fb3d8d791eef0fc9aeb7db2f19c69bb08bfec9d8494c46fc",
+        "status": "event_supply_reconciled",
+        "holder_count": 16,
+        "total_supply_raw": "5600000000000000000000000000",
+        "event_supply_raw": "5600000000000000000000000000",
+        "top_holders": [
+          {
+            "address": "0xddd0b457d6ca89f3914cbf9fc7c74b37e9ad7899",
+            "balance_raw": "1508705564982230836016878260",
+            "fraction": "0.2694117080325412207172996893"
+          },
+          {
+            "address": "0x6aa989249e423b0f843a2b10cab9ea7eca41c7e8",
+            "balance_raw": "1200973550018733478294451119",
+            "fraction": "0.2144595625033452639811519855"
+          },
+          {
+            "address": "0x639fa26d6b7132d65ed20ee033313eab59e18bc1",
+            "balance_raw": "900971420780786640558008428",
+            "fraction": "0.160887753710854757242501505"
+          },
+          {
+            "address": "0x701195f1ff3f1c9f8ced951cacc9608cbce1881f",
+            "balance_raw": "353175874000190702110037073",
+            "fraction": "0.06306712035717691109107804875"
+          },
+          {
+            "address": "0xf25f5911f8dc0da1223981f7144ebd1c9f3b1da4",
+            "balance_raw": "334772108697423237131919217",
+            "fraction": "0.05978073369596843520212843161"
+          },
+          {
+            "address": "0xf90134784e94c2aeb3e535aaa9890deba14941be",
+            "balance_raw": "198957628467579767248310109",
+            "fraction": "0.03552814794063924415148394804"
+          },
+          {
+            "address": "0x9ea5aca14e9988af1c93070069e475afab9e2bde",
+            "balance_raw": "178055820824466574947477688",
+            "fraction": "0.03179568229008331695490673"
+          },
+          {
+            "address": "0xe33a78204e4f2737187bf1c5d9426eba8dd2e7f3",
+            "balance_raw": "175461134584482271458081336",
+            "fraction": "0.03133234546151469133180023857"
+          },
+          {
+            "address": "0x1c3e45f7fa09349fe63d0b944404a680dd5a9165",
+            "balance_raw": "151524468774701636742436094",
+            "fraction": "0.02705794085262529227543501679"
+          },
+          {
+            "address": "0xe184eecae5d1209ca68e156a33f05bc579b7d61e",
+            "balance_raw": "130216946577197426360612294",
+            "fraction": "0.02325302617449954042153790964"
+          },
+          {
+            "address": "0x02f7883f087228aa93b49adad6c7ed68a6fe4f1a",
+            "balance_raw": "119936391441676113725821435",
+            "fraction": "0.02141721275744216316532525625"
+          },
+          {
+            "address": "0x0d4aa6f24630e231eaf708fe80e863d2645a4aca",
+            "balance_raw": "104584853876899997161514410",
+            "fraction": "0.01867586676373214235027043036"
+          },
+          {
+            "address": "0xe276f96e534686db17e5945a52dfadff4912aba5",
+            "balance_raw": "103910532692318078349273312",
+            "fraction": "0.01855545226648537113379880571"
+          },
+          {
+            "address": "0xeaf7ca5704f523a23d5db4286a355c4810be3d56",
+            "balance_raw": "78050656568885993535234781",
+            "fraction": "0.01393761724444392741700621089"
+          },
+          {
+            "address": "0xbaddbe5bee2007916abeb40f5823d36739913d29",
+            "balance_raw": "42562417184000897837870281",
+            "fraction": "0.007600431640000160328191121607"
+          },
+          {
+            "address": "0xae51a1f680dada887f5af272ff49e27a95441162",
+            "balance_raw": "18140630528426348522074163",
+            "fraction": "0.003239398308647562236084671964"
+          }
+        ],
+        "limitations": "[\"event_derived_not_independently_balance_verified\", \"rebase_or_dishonest_events_possible\", \"first_code_assumes_no_redeployment\", \"LPs_and_contracts_not_excluded\", \"head_minus_20_not_finalized\"]",
+        "caught_up": 1,
+        "balance_checks": []
+      },
+      "review_quote_checks": {
+        "id": 6,
+        "run_id": 27,
+        "token_address": "0x257a97160b528b2c09cd5ca5d22050e59eb88c91",
+        "checked_at": "2026-10-24T05:07:27.552172+00:00",
+        "buy_quote_id": 45,
+        "sell_quote_id": 46,
+        "status": "roundtrip_quoted",
+        "roundtrip_return": "-1.000091829661410836220759597"
+      }
+    },
+    {
+      "token": "0x2640c0dd6e406f55f8b1d35c65830603e4011a8f",
+      "metadata": {
+        "request_id": 443,
+        "observed_at": "2026-10-24T05:04:02.773384+00:00",
+        "name": "from1kto100Mcoin",
+        "symbol": "1KTO100M",
+        "websites": [],
+        "socials": []
+      },
+      "pool_snapshot": {
+        "id": 502,
+        "request_id": 443,
+        "chain": "base",
+        "pool_address": "0x8238924a36a05c68697ab75b47272bb89cce838a",
+        "observed_at": "2026-10-24T05:04:02.773384+00:00",
+        "source": "dexscreener",
+        "token_address": "0x2640c0dd6e406f55f8b1d35c65830603e4011a8f",
+        "pool_created_at": "2026-10-24T03:46:55+00:00",
+        "price_usd": "7.549E-14",
+        "liquidity_usd": "0",
+        "fdv_usd": null,
+        "market_cap_usd": null,
+        "volume_24h_usd": "1922.27",
+        "buys_24h": 66,
+        "sells_24h": 6,
+        "flags": "[\"holders_unknown\", \"contract_risk_unknown\", \"sellability_unknown\", \"circulating_supply_unverified\", \"fdv_usd_missing\", \"market_cap_usd_missing\"]",
+        "normalizer_version": "2"
+      },
+      "security_observations": {
+        "id": 7,
+        "request_id": 15,
+        "token_address": "0x2640c0dd6e406f55f8b1d35c65830603e4011a8f",
+        "observed_at": "2026-10-24T04:38:14.277770+00:00",
+        "status": "observed",
+        "assessment": {
+          "version": "1",
+          "risk_fields": {
+            "is_proxy": "unknown",
+            "is_mintable": "unknown",
+            "can_take_back_ownership": "unknown",
+            "owner_change_balance": "unknown",
+            "hidden_owner": "unknown",
+            "transfer_pausable": "unknown",
+            "is_blacklisted": "unknown",
+            "slippage_modifiable": "unknown",
+            "is_honeypot": "unknown",
+            "cannot_sell_all": "reported_absent"
+          },
+          "flags": [],
+          "owner_address": "",
+          "taxes": {
+            "buy_tax": "0",
+            "sell_tax": "0"
+          },
+          "source_open": null,
+          "conclusion": "unverified",
+          "limitations": [
+            "provider_report_not_audit",
+            "upgrade_control_not_independently_verified",
+            "role_based_permissions_unknown",
+            "live_sellability_unknown"
+          ]
+        }
+      },
+      "onchain_observations": null,
+      "indexed_holder_snapshots": null,
+      "review_quote_checks": {
+        "id": 7,
+        "run_id": 27,
+        "token_address": "0x2640c0dd6e406f55f8b1d35c65830603e4011a8f",
+        "checked_at": "2026-10-24T05:07:29.171336+00:00",
+        "buy_quote_id": 47,
+        "sell_quote_id": 48,
+        "status": "roundtrip_quoted",
+        "roundtrip_return": "-1.000072335024584613044777603"
+      }
+    },
+    {
+      "token": "0x2e8c8554fce95bed9e58836353673f8b7619de41",
+      "metadata": {
+        "request_id": 443,
+        "observed_at": "2026-10-24T05:04:02.773384+00:00",
+        "name": "US Oil Exchange (USOE)",
+        "symbol": "USOE",
+        "websites": [],
+        "socials": []
+      },
+      "pool_snapshot": {
+        "id": 487,
+        "request_id": 443,
+        "chain": "base",
+        "pool_address": "0xde73c63076fe77109f7e2eabb6dabdcd612fe24034c3dff07c7bfe224c11dfc2",
+        "observed_at": "2026-10-24T05:04:02.773384+00:00",
+        "source": "dexscreener",
+        "token_address": "0x2e8c8554fce95bed9e58836353673f8b7619de41",
+        "pool_created_at": "2026-10-24T04:18:03+00:00",
+        "price_usd": "0.1498",
+        "liquidity_usd": "87105.85",
+        "fdv_usd": "1441371534",
+        "market_cap_usd": "1441371534",
+        "volume_24h_usd": "285624.01",
+        "buys_24h": 106,
+        "sells_24h": 96,
+        "flags": "[\"holders_unknown\", \"contract_risk_unknown\", \"sellability_unknown\", \"circulating_supply_unverified\"]",
+        "normalizer_version": "2"
+      },
+      "security_observations": {
+        "id": 8,
+        "request_id": 16,
+        "token_address": "0x2e8c8554fce95bed9e58836353673f8b7619de41",
+        "observed_at": "2026-10-24T04:38:16.744517+00:00",
+        "status": "observed",
+        "assessment": {
+          "version": "1",
+          "risk_fields": {
+            "is_proxy": "unknown",
+            "is_mintable": "unknown",
+            "can_take_back_ownership": "unknown",
+            "owner_change_balance": "unknown",
+            "hidden_owner": "unknown",
+            "transfer_pausable": "unknown",
+            "is_blacklisted": "unknown",
+            "slippage_modifiable": "unknown",
+            "is_honeypot": "unknown",
+            "cannot_sell_all": "unknown"
+          },
+          "flags": [],
+          "owner_address": "",
+          "taxes": {
+            "buy_tax": null,
+            "sell_tax": null
+          },
+          "source_open": null,
+          "conclusion": "unverified",
+          "limitations": [
+            "provider_report_not_audit",
+            "upgrade_control_not_independently_verified",
+            "role_based_permissions_unknown",
+            "live_sellability_unknown"
+          ]
+        }
+      },
+      "onchain_observations": null,
+      "indexed_holder_snapshots": null,
+      "review_quote_checks": {
+        "id": 8,
+        "run_id": 27,
+        "token_address": "0x2e8c8554fce95bed9e58836353673f8b7619de41",
+        "checked_at": "2026-10-24T05:07:30.729993+00:00",
+        "buy_quote_id": 49,
+        "sell_quote_id": 50,
+        "status": "roundtrip_quoted",
+        "roundtrip_return": "-0.0083143703505302342701143672"
+      }
+    },
+    {
+      "token": "0x3ebf8d2042d339fd66c679a985e0eb527b2ae4df",
+      "metadata": {
+        "request_id": 443,
+        "observed_at": "2026-10-24T05:04:02.773384+00:00",
+        "name": "Agent ID",
+        "symbol": ".AI",
+        "websites": [],
+        "socials": []
+      },
+      "pool_snapshot": {
+        "id": 499,
+        "request_id": 443,
+        "chain": "base",
+        "pool_address": "0x777e0c204309b90746a0de4eb3144750467309ea",
+        "observed_at": "2026-10-24T05:04:02.773384+00:00",
+        "source": "dexscreener",
+        "token_address": "0x3ebf8d2042d339fd66c679a985e0eb527b2ae4df",
+        "pool_created_at": "2026-10-24T03:53:55+00:00",
+        "price_usd": "1.003E-10",
+        "liquidity_usd": "0",
+        "fdv_usd": "1",
+        "market_cap_usd": "1",
+        "volume_24h_usd": "1869.33",
+        "buys_24h": 63,
+        "sells_24h": 9,
+        "flags": "[\"holders_unknown\", \"contract_risk_unknown\", \"sellability_unknown\", \"circulating_supply_unverified\"]",
+        "normalizer_version": "2"
+      },
+      "security_observations": {
+        "id": 9,
+        "request_id": 17,
+        "token_address": "0x3ebf8d2042d339fd66c679a985e0eb527b2ae4df",
+        "observed_at": "2026-10-24T04:38:19.277728+00:00",
+        "status": "observed",
+        "assessment": {
+          "version": "1",
+          "risk_fields": {
+            "is_proxy": "unknown",
+            "is_mintable": "unknown",
+            "can_take_back_ownership": "unknown",
+            "owner_change_balance": "unknown",
+            "hidden_owner": "unknown",
+            "transfer_pausable": "unknown",
+            "is_blacklisted": "unknown",
+            "slippage_modifiable": "unknown",
+            "is_honeypot": "unknown",
+            "cannot_sell_all": "reported_absent"
+          },
+          "flags": [],
+          "owner_address": "",
+          "taxes": {
+            "buy_tax": "0",
+            "sell_tax": "0"
+          },
+          "source_open": null,
+          "conclusion": "unverified",
+          "limitations": [
+            "provider_report_not_audit",
+            "upgrade_control_not_independently_verified",
+            "role_based_permissions_unknown",
+            "live_sellability_unknown"
+          ]
+        }
+      },
+      "onchain_observations": null,
+      "indexed_holder_snapshots": null,
+      "review_quote_checks": {
+        "id": 9,
+        "run_id": 27,
+        "token_address": "0x3ebf8d2042d339fd66c679a985e0eb527b2ae4df",
+        "checked_at": "2026-10-24T05:07:32.408062+00:00",
+        "buy_quote_id": 51,
+        "sell_quote_id": 52,
+        "status": "roundtrip_quoted",
+        "roundtrip_return": "-1.000051543590927725765600831"
+      }
+    },
+    {
+      "token": "0x4db6a5fdc2e0821caabd364da4ef74228b8bd5b7",
+      "metadata": {
+        "request_id": 444,
+        "observed_at": "2026-10-24T05:04:03.224171+00:00",
+        "name": "Chubby",
+        "symbol": "CHUBBY",
+        "websites": [],
+        "socials": []
+      },
+      "pool_snapshot": {
+        "id": 505,
+        "request_id": 444,
+        "chain": "base",
+        "pool_address": "0xb529c6bdf1e4cb57135c1d660cae6b5b5860bb5c",
+        "observed_at": "2026-10-24T05:04:03.224171+00:00",
+        "source": "dexscreener",
+        "token_address": "0x4db6a5fdc2e0821caabd364da4ef74228b8bd5b7",
+        "pool_created_at": "2026-10-24T03:44:29+00:00",
+        "price_usd": "2.430E-13",
+        "liquidity_usd": "0",
+        "fdv_usd": null,
+        "market_cap_usd": null,
+        "volume_24h_usd": "2670.24",
+        "buys_24h": 57,
+        "sells_24h": 6,
+        "flags": "[\"holders_unknown\", \"contract_risk_unknown\", \"sellability_unknown\", \"circulating_supply_unverified\", \"fdv_usd_missing\", \"market_cap_usd_missing\"]",
+        "normalizer_version": "2"
+      },
+      "security_observations": {
+        "id": 10,
+        "request_id": 18,
+        "token_address": "0x4db6a5fdc2e0821caabd364da4ef74228b8bd5b7",
+        "observed_at": "2026-10-24T04:38:21.726495+00:00",
+        "status": "observed",
+        "assessment": {
+          "version": "1",
+          "risk_fields": {
+            "is_proxy": "unknown",
+            "is_mintable": "unknown",
+            "can_take_back_ownership": "unknown",
+            "owner_change_balance": "unknown",
+            "hidden_owner": "unknown",
+            "transfer_pausable": "unknown",
+            "is_blacklisted": "unknown",
+            "slippage_modifiable": "unknown",
+            "is_honeypot": "unknown",
+            "cannot_sell_all": "reported_absent"
+          },
+          "flags": [],
+          "owner_address": "",
+          "taxes": {
+            "buy_tax": "0",
+            "sell_tax": "0"
+          },
+          "source_open": null,
+          "conclusion": "unverified",
+          "limitations": [
+            "provider_report_not_audit",
+            "upgrade_control_not_independently_verified",
+            "role_based_permissions_unknown",
+            "live_sellability_unknown"
+          ]
+        }
+      },
+      "onchain_observations": null,
+      "indexed_holder_snapshots": null,
+      "review_quote_checks": {
+        "id": 10,
+        "run_id": 27,
+        "token_address": "0x4db6a5fdc2e0821caabd364da4ef74228b8bd5b7",
+        "checked_at": "2026-10-24T05:07:34.049232+00:00",
+        "buy_quote_id": 53,
+        "sell_quote_id": 54,
+        "status": "roundtrip_quoted",
+        "roundtrip_return": "-1.000071317315967106277076398"
+      }
+    },
+    {
+      "token": "0x5686e65192805cf132f1f255e34e4d71dcba0bc0",
+      "metadata": {
+        "request_id": 442,
+        "observed_at": "2026-10-24T05:04:02.300540+00:00",
+        "name": "from1kto100Mcoin",
+        "symbol": "1KTO100M",
+        "websites": [],
+        "socials": []
+      },
+      "pool_snapshot": {
+        "id": 475,
+        "request_id": 442,
+        "chain": "base",
+        "pool_address": "0x7eb1fa5148cd68e99da75033758579e2a81af5af",
+        "observed_at": "2026-10-24T05:04:02.300540+00:00",
+        "source": "dexscreener",
+        "token_address": "0x5686e65192805cf132f1f255e34e4d71dcba0bc0",
+        "pool_created_at": "2026-10-24T04:29:41+00:00",
+        "price_usd": "1.126E-10",
+        "liquidity_usd": "0",
+        "fdv_usd": "1",
+        "market_cap_usd": "1",
+        "volume_24h_usd": "1770.27",
+        "buys_24h": 62,
+        "sells_24h": 10,
+        "flags": "[\"holders_unknown\", \"contract_risk_unknown\", \"sellability_unknown\", \"circulating_supply_unverified\"]",
+        "normalizer_version": "2"
+      },
+      "security_observations": {
+        "id": 11,
+        "request_id": 19,
+        "token_address": "0x5686e65192805cf132f1f255e34e4d71dcba0bc0",
+        "observed_at": "2026-10-24T04:38:24.294463+00:00",
+        "status": "observed",
+        "assessment": {
+          "version": "1",
+          "risk_fields": {
+            "is_proxy": "unknown",
+            "is_mintable": "unknown",
+            "can_take_back_ownership": "unknown",
+            "owner_change_balance": "unknown",
+            "hidden_owner": "unknown",
+            "transfer_pausable": "unknown",
+            "is_blacklisted": "unknown",
+            "slippage_modifiable": "unknown",
+            "is_honeypot": "unknown",
+            "cannot_sell_all": "unknown"
+          },
+          "flags": [],
+          "owner_address": "",
+          "taxes": {
+            "buy_tax": null,
+            "sell_tax": null
+          },
+          "source_open": null,
+          "conclusion": "unverified",
+          "limitations": [
+            "provider_report_not_audit",
+            "upgrade_control_not_independently_verified",
+            "role_based_permissions_unknown",
+            "live_sellability_unknown"
+          ]
+        }
+      },
+      "onchain_observations": null,
+      "indexed_holder_snapshots": null,
+      "review_quote_checks": {
+        "id": 11,
+        "run_id": 27,
+        "token_address": "0x5686e65192805cf132f1f255e34e4d71dcba0bc0",
+        "checked_at": "2026-10-24T05:07:35.809857+00:00",
+        "buy_quote_id": 55,
+        "sell_quote_id": 56,
+        "status": "roundtrip_quoted",
+        "roundtrip_return": "-1.000052461935262769607422300"
+      }
+    },
+    {
+      "token": "0x73d36a52a6041788012d086ffc746516895b5920",
+      "metadata": {
+        "request_id": 442,
+        "observed_at": "2026-10-24T05:04:02.300540+00:00",
+        "name": "AOP",
+        "symbol": "AOP",
+        "websites": [],
+        "socials": []
+      },
+      "pool_snapshot": {
+        "id": 479,
+        "request_id": 442,
+        "chain": "base",
+        "pool_address": "0xb9c4c92495c0d30c5cb59bdadb550fde0ca48a946449e5fd3fff8d437df436ee",
+        "observed_at": "2026-10-24T05:04:02.300540+00:00",
+        "source": "dexscreener",
+        "token_address": "0x73d36a52a6041788012d086ffc746516895b5920",
+        "pool_created_at": "2026-10-24T04:32:51+00:00",
+        "price_usd": "1.070",
+        "liquidity_usd": "109052.31",
+        "fdv_usd": "10296383771",
+        "market_cap_usd": "10296383771",
+        "volume_24h_usd": "480131.61",
+        "buys_24h": 313,
+        "sells_24h": 272,
+        "flags": "[\"holders_unknown\", \"contract_risk_unknown\", \"sellability_unknown\", \"circulating_supply_unverified\"]",
+        "normalizer_version": "2"
+      },
+      "security_observations": {
+        "id": 12,
+        "request_id": 20,
+        "token_address": "0x73d36a52a6041788012d086ffc746516895b5920",
+        "observed_at": "2026-10-24T04:38:26.745142+00:00",
+        "status": "unknown",
+        "assessment": {
+          "version": "1",
+          "risk_fields": {
+            "is_proxy": "unknown",
+            "is_mintable": "unknown",
+            "can_take_back_ownership": "unknown",
+            "owner_change_balance": "unknown",
+            "hidden_owner": "unknown",
+            "transfer_pausable": "unknown",
+            "is_blacklisted": "unknown",
+            "slippage_modifiable": "unknown",
+            "is_honeypot": "unknown",
+            "cannot_sell_all": "unknown"
+          },
+          "flags": [],
+          "owner_address": null,
+          "taxes": {
+            "buy_tax": null,
+            "sell_tax": null
+          },
+          "source_open": null,
+          "conclusion": "unverified",
+          "limitations": [
+            "provider_report_not_audit",
+            "upgrade_control_not_independently_verified",
+            "role_based_permissions_unknown",
+            "live_sellability_unknown"
+          ]
+        }
+      },
+      "onchain_observations": null,
+      "indexed_holder_snapshots": null,
+      "review_quote_checks": {
+        "id": 12,
+        "run_id": 27,
+        "token_address": "0x73d36a52a6041788012d086ffc746516895b5920",
+        "checked_at": "2026-10-24T05:07:37.367393+00:00",
+        "buy_quote_id": 57,
+        "sell_quote_id": 58,
+        "status": "roundtrip_quoted",
+        "roundtrip_return": "-0.0063081955262950729638204131"
+      }
+    },
+    {
+      "token": "0x7977e264b8832d02a88a7938adc17b4e60422467",
+      "metadata": {
+        "request_id": 444,
+        "observed_at": "2026-10-24T05:04:03.224171+00:00",
+        "name": "USOE",
+        "symbol": "USOE",
+        "websites": [],
+        "socials": []
+      },
+      "pool_snapshot": {
+        "id": 507,
+        "request_id": 444,
+        "chain": "base",
+        "pool_address": "0xc524fa9d00c9459fb17e9f9103726b569e4db86a2908691247cc73e7e98c1322",
+        "observed_at": "2026-10-24T05:04:03.224171+00:00",
+        "source": "dexscreener",
+        "token_address": "0x7977e264b8832d02a88a7938adc17b4e60422467",
+        "pool_created_at": "2026-10-24T03:45:11+00:00",
+        "price_usd": "0.2663",
+        "liquidity_usd": "159014.72",
+        "fdv_usd": "2562826535",
+        "market_cap_usd": "2562826535",
+        "volume_24h_usd": "278258.3",
+        "buys_24h": 147,
+        "sells_24h": 135,
+        "flags": "[\"holders_unknown\", \"contract_risk_unknown\", \"sellability_unknown\", \"circulating_supply_unverified\"]",
+        "normalizer_version": "2"
+      },
+      "security_observations": {
+        "id": 13,
+        "request_id": 21,
+        "token_address": "0x7977e264b8832d02a88a7938adc17b4e60422467",
+        "observed_at": "2026-10-24T04:38:29.210152+00:00",
+        "status": "unknown",
+        "assessment": {
+          "version": "1",
+          "risk_fields": {
+            "is_proxy": "unknown",
+            "is_mintable": "unknown",
+            "can_take_back_ownership": "unknown",
+            "owner_change_balance": "unknown",
+            "hidden_owner": "unknown",
+            "transfer_pausable": "unknown",
+            "is_blacklisted": "unknown",
+            "slippage_modifiable": "unknown",
+            "is_honeypot": "unknown",
+            "cannot_sell_all": "unknown"
+          },
+          "flags": [],
+          "owner_address": null,
+          "taxes": {
+            "buy_tax": null,
+            "sell_tax": null
+          },
+          "source_open": null,
+          "conclusion": "unverified",
+          "limitations": [
+            "provider_report_not_audit",
+            "upgrade_control_not_independently_verified",
+            "role_based_permissions_unknown",
+            "live_sellability_unknown"
+          ]
+        }
+      },
+      "onchain_observations": null,
+      "indexed_holder_snapshots": null,
+      "review_quote_checks": {
+        "id": 13,
+        "run_id": 27,
+        "token_address": "0x7977e264b8832d02a88a7938adc17b4e60422467",
+        "checked_at": "2026-10-24T05:07:38.980539+00:00",
+        "buy_quote_id": 59,
+        "sell_quote_id": 60,
+        "status": "roundtrip_quoted",
+        "roundtrip_return": "-0.0072807923336222656052162433"
+      }
+    },
+    {
+      "token": "0x8216d650295a9c9f16926251f350fd808b85097e",
+      "metadata": {
+        "request_id": 443,
+        "observed_at": "2026-10-24T05:04:02.773384+00:00",
+        "name": "Just a Normie",
+        "symbol": "NORMIE",
+        "websites": [],
+        "socials": []
+      },
+      "pool_snapshot": {
+        "id": 501,
+        "request_id": 443,
+        "chain": "base",
+        "pool_address": "0x7b908865626dfcbfbad796402939d137245a719ae489981207f2b62bf24b05c7",
+        "observed_at": "2026-10-24T05:04:02.773384+00:00",
+        "source": "dexscreener",
+        "token_address": "0x8216d650295a9c9f16926251f350fd808b85097e",
+        "pool_created_at": "2026-10-24T03:52:11+00:00",
+        "price_usd": "0.000002401",
+        "liquidity_usd": "3477.29",
+        "fdv_usd": "2401",
+        "market_cap_usd": "2401",
+        "volume_24h_usd": "1268.25",
+        "buys_24h": 4,
+        "sells_24h": 1,
+        "flags": "[\"holders_unknown\", \"contract_risk_unknown\", \"sellability_unknown\", \"circulating_supply_unverified\"]",
+        "normalizer_version": "2"
+      },
+      "security_observations": {
+        "id": 14,
+        "request_id": 22,
+        "token_address": "0x8216d650295a9c9f16926251f350fd808b85097e",
+        "observed_at": "2026-10-24T04:38:31.634368+00:00",
+        "status": "unknown",
+        "assessment": {
+          "version": "1",
+          "risk_fields": {
+            "is_proxy": "unknown",
+            "is_mintable": "unknown",
+            "can_take_back_ownership": "unknown",
+            "owner_change_balance": "unknown",
+            "hidden_owner": "unknown",
+            "transfer_pausable": "unknown",
+            "is_blacklisted": "unknown",
+            "slippage_modifiable": "unknown",
+            "is_honeypot": "unknown",
+            "cannot_sell_all": "unknown"
+          },
+          "flags": [],
+          "owner_address": null,
+          "taxes": {
+            "buy_tax": null,
+            "sell_tax": null
+          },
+          "source_open": null,
+          "conclusion": "unverified",
+          "limitations": [
+            "provider_report_not_audit",
+            "upgrade_control_not_independently_verified",
+            "role_based_permissions_unknown",
+            "live_sellability_unknown"
+          ]
+        }
+      },
+      "onchain_observations": null,
+      "indexed_holder_snapshots": null,
+      "review_quote_checks": {
+        "id": 14,
+        "run_id": 27,
+        "token_address": "0x8216d650295a9c9f16926251f350fd808b85097e",
+        "checked_at": "2026-10-24T05:07:39.778674+00:00",
+        "buy_quote_id": 61,
+        "sell_quote_id": null,
+        "status": "entry_unknown",
+        "roundtrip_return": null
+      }
+    },
+    {
+      "token": "0x826b674d8e5d2cecc344f662cbe195f3864bd4e4",
+      "metadata": {
+        "request_id": 443,
+        "observed_at": "2026-10-24T05:04:02.773384+00:00",
+        "name": "X1000XLiquidBGT",
+        "symbol": "LIQUIDBGT",
+        "websites": [],
+        "socials": []
+      },
+      "pool_snapshot": {
+        "id": 489,
+        "request_id": 443,
+        "chain": "base",
+        "pool_address": "0xf52a44f090d4c0511ca0d63eed5ae1c20618caf5",
+        "observed_at": "2026-10-24T05:04:02.773384+00:00",
+        "source": "dexscreener",
+        "token_address": "0x826b674d8e5d2cecc344f662cbe195f3864bd4e4",
+        "pool_created_at": "2026-10-24T04:32:47+00:00",
+        "price_usd": "3.142E-13",
+        "liquidity_usd": "0",
+        "fdv_usd": null,
+        "market_cap_usd": null,
+        "volume_24h_usd": "3408.76",
+        "buys_24h": 58,
+        "sells_24h": 8,
+        "flags": "[\"holders_unknown\", \"contract_risk_unknown\", \"sellability_unknown\", \"circulating_supply_unverified\", \"fdv_usd_missing\", \"market_cap_usd_missing\"]",
+        "normalizer_version": "2"
+      },
+      "security_observations": {
+        "id": 15,
+        "request_id": 23,
+        "token_address": "0x826b674d8e5d2cecc344f662cbe195f3864bd4e4",
+        "observed_at": "2026-10-24T04:38:34.078543+00:00",
+        "status": "unknown",
+        "assessment": {
+          "version": "1",
+          "risk_fields": {
+            "is_proxy": "unknown",
+            "is_mintable": "unknown",
+            "can_take_back_ownership": "unknown",
+            "owner_change_balance": "unknown",
+            "hidden_owner": "unknown",
+            "transfer_pausable": "unknown",
+            "is_blacklisted": "unknown",
+            "slippage_modifiable": "unknown",
+            "is_honeypot": "unknown",
+            "cannot_sell_all": "unknown"
+          },
+          "flags": [],
+          "owner_address": null,
+          "taxes": {
+            "buy_tax": null,
+            "sell_tax": null
+          },
+          "source_open": null,
+          "conclusion": "unverified",
+          "limitations": [
+            "provider_report_not_audit",
+            "upgrade_control_not_independently_verified",
+            "role_based_permissions_unknown",
+            "live_sellability_unknown"
+          ]
+        }
+      },
+      "onchain_observations": null,
+      "indexed_holder_snapshots": null,
+      "review_quote_checks": {
+        "id": 15,
+        "run_id": 27,
+        "token_address": "0x826b674d8e5d2cecc344f662cbe195f3864bd4e4",
+        "checked_at": "2026-10-24T05:07:41.374007+00:00",
+        "buy_quote_id": 62,
+        "sell_quote_id": 63,
+        "status": "roundtrip_quoted",
+        "roundtrip_return": "-1.000070797674950166653233985"
+      }
+    },
+    {
+      "token": "0x847d45b1e75a093e053b8f91f1b000f990d2f8a0",
+      "metadata": {
+        "request_id": 443,
+        "observed_at": "2026-10-24T05:04:02.773384+00:00",
+        "name": "Extractor-91",
+        "symbol": "E91",
+        "websites": [],
+        "socials": []
+      },
+      "pool_snapshot": {
+        "id": 503,
+        "request_id": 443,
+        "chain": "base",
+        "pool_address": "0x8dec5381428f4f07ba3cd4c5f0988d1f4d356a05597d4ab78b5d7b0b8c1d0ab0",
+        "observed_at": "2026-10-24T05:04:02.773384+00:00",
+        "source": "dexscreener",
+        "token_address": "0x847d45b1e75a093e053b8f91f1b000f990d2f8a0",
+        "pool_created_at": "2026-10-24T03:41:57+00:00",
+        "price_usd": "0.000002405",
+        "liquidity_usd": "3387.27",
+        "fdv_usd": "2406",
+        "market_cap_usd": "2406",
+        "volume_24h_usd": "1270.73",
+        "buys_24h": 4,
+        "sells_24h": 1,
+        "flags": "[\"holders_unknown\", \"contract_risk_unknown\", \"sellability_unknown\", \"circulating_supply_unverified\"]",
+        "normalizer_version": "2"
+      },
+      "security_observations": {
+        "id": 16,
+        "request_id": 24,
+        "token_address": "0x847d45b1e75a093e053b8f91f1b000f990d2f8a0",
+        "observed_at": "2026-10-24T04:38:36.520665+00:00",
+        "status": "unknown",
+        "assessment": {
+          "version": "1",
+          "risk_fields": {
+            "is_proxy": "unknown",
+            "is_mintable": "unknown",
+            "can_take_back_ownership": "unknown",
+            "owner_change_balance": "unknown",
+            "hidden_owner": "unknown",
+            "transfer_pausable": "unknown",
+            "is_blacklisted": "unknown",
+            "slippage_modifiable": "unknown",
+            "is_honeypot": "unknown",
+            "cannot_sell_all": "unknown"
+          },
+          "flags": [],
+          "owner_address": null,
+          "taxes": {
+            "buy_tax": null,
+            "sell_tax": null
+          },
+          "source_open": null,
+          "conclusion": "unverified",
+          "limitations": [
+            "provider_report_not_audit",
+            "upgrade_control_not_independently_verified",
+            "role_based_permissions_unknown",
+            "live_sellability_unknown"
+          ]
+        }
+      },
+      "onchain_observations": null,
+      "indexed_holder_snapshots": null,
+      "review_quote_checks": {
+        "id": 16,
+        "run_id": 27,
+        "token_address": "0x847d45b1e75a093e053b8f91f1b000f990d2f8a0",
+        "checked_at": "2026-10-24T05:07:42.177014+00:00",
+        "buy_quote_id": 64,
+        "sell_quote_id": null,
+        "status": "entry_unknown",
+        "roundtrip_return": null
+      }
+    },
+    {
+      "token": "0x853b251de7d7ec66e3c6e9ca9158c32cd8f2579a",
+      "metadata": {
+        "request_id": 442,
+        "observed_at": "2026-10-24T05:04:02.300540+00:00",
+        "name": "American Overwatch Protocol",
+        "symbol": "AOP",
+        "websites": [],
+        "socials": []
+      },
+      "pool_snapshot": {
+        "id": 472,
+        "request_id": 442,
+        "chain": "base",
+        "pool_address": "0x58c90ce684ae2e24f6824ce7a51a0c5d0ab965d93f6590aa15dc24da7445cd3a",
+        "observed_at": "2026-10-24T05:04:02.300540+00:00",
+        "source": "dexscreener",
+        "token_address": "0x853b251de7d7ec66e3c6e9ca9158c32cd8f2579a",
+        "pool_created_at": "2026-10-24T04:26:55+00:00",
+        "price_usd": "0.05819",
+        "liquidity_usd": "93152.85",
+        "fdv_usd": "559967509",
+        "market_cap_usd": "559967509",
+        "volume_24h_usd": "346235.74",
+        "buys_24h": 86,
+        "sells_24h": 78,
+        "flags": "[\"holders_unknown\", \"contract_risk_unknown\", \"sellability_unknown\", \"circulating_supply_unverified\"]",
+        "normalizer_version": "2"
+      },
+      "security_observations": {
+        "id": 17,
+        "request_id": 25,
+        "token_address": "0x853b251de7d7ec66e3c6e9ca9158c32cd8f2579a",
+        "observed_at": "2026-10-24T04:38:38.960682+00:00",
+        "status": "unknown",
+        "assessment": {
+          "version": "1",
+          "risk_fields": {
+            "is_proxy": "unknown",
+            "is_mintable": "unknown",
+            "can_take_back_ownership": "unknown",
+            "owner_change_balance": "unknown",
+            "hidden_owner": "unknown",
+            "transfer_pausable": "unknown",
+            "is_blacklisted": "unknown",
+            "slippage_modifiable": "unknown",
+            "is_honeypot": "unknown",
+            "cannot_sell_all": "unknown"
+          },
+          "flags": [],
+          "owner_address": null,
+          "taxes": {
+            "buy_tax": null,
+            "sell_tax": null
+          },
+          "source_open": null,
+          "conclusion": "unverified",
+          "limitations": [
+            "provider_report_not_audit",
+            "upgrade_control_not_independently_verified",
+            "role_based_permissions_unknown",
+            "live_sellability_unknown"
+          ]
+        }
+      },
+      "onchain_observations": null,
+      "indexed_holder_snapshots": null,
+      "review_quote_checks": {
+        "id": 17,
+        "run_id": 27,
+        "token_address": "0x853b251de7d7ec66e3c6e9ca9158c32cd8f2579a",
+        "checked_at": "2026-10-24T05:07:43.755885+00:00",
+        "buy_quote_id": 65,
+        "sell_quote_id": 66,
+        "status": "roundtrip_quoted",
+        "roundtrip_return": "-0.0091240407149236332324378536"
+      }
+    },
+    {
+      "token": "0x8c09ab3a923110edb6784ec1a677d5a04d0884b9",
+      "metadata": {
+        "request_id": 442,
+        "observed_at": "2026-10-24T05:04:02.300540+00:00",
+        "name": "National Oil Fund Trust",
+        "symbol": "NOFT",
+        "websites": [],
+        "socials": []
+      },
+      "pool_snapshot": {
+        "id": 477,
+        "request_id": 442,
+        "chain": "base",
+        "pool_address": "0x98f7ae46ddb1e3a24d781ec93cb805dbe27545c0d3672350b9545c84725a28c9",
+        "observed_at": "2026-10-24T05:04:02.300540+00:00",
+        "source": "dexscreener",
+        "token_address": "0x8c09ab3a923110edb6784ec1a677d5a04d0884b9",
+        "pool_created_at": "2026-10-24T04:24:39+00:00",
+        "price_usd": "0.0001249",
+        "liquidity_usd": "123689.85",
+        "fdv_usd": "124940",
+        "market_cap_usd": "124940",
+        "volume_24h_usd": "161.84",
+        "buys_24h": 17,
+        "sells_24h": 7,
+        "flags": "[\"holders_unknown\", \"contract_risk_unknown\", \"sellability_unknown\", \"circulating_supply_unverified\"]",
+        "normalizer_version": "2"
+      },
+      "security_observations": {
+        "id": 18,
+        "request_id": 26,
+        "token_address": "0x8c09ab3a923110edb6784ec1a677d5a04d0884b9",
+        "observed_at": "2026-10-24T04:38:41.398231+00:00",
+        "status": "unknown",
+        "assessment": {
+          "version": "1",
+          "risk_fields": {
+            "is_proxy": "unknown",
+            "is_mintable": "unknown",
+            "can_take_back_ownership": "unknown",
+            "owner_change_balance": "unknown",
+            "hidden_owner": "unknown",
+            "transfer_pausable": "unknown",
+            "is_blacklisted": "unknown",
+            "slippage_modifiable": "unknown",
+            "is_honeypot": "unknown",
+            "cannot_sell_all": "unknown"
+          },
+          "flags": [],
+          "owner_address": null,
+          "taxes": {
+            "buy_tax": null,
+            "sell_tax": null
+          },
+          "source_open": null,
+          "conclusion": "unverified",
+          "limitations": [
+            "provider_report_not_audit",
+            "upgrade_control_not_independently_verified",
+            "role_based_permissions_unknown",
+            "live_sellability_unknown"
+          ]
+        }
+      },
+      "onchain_observations": null,
+      "indexed_holder_snapshots": null,
+      "review_quote_checks": {
+        "id": 18,
+        "run_id": 27,
+        "token_address": "0x8c09ab3a923110edb6784ec1a677d5a04d0884b9",
+        "checked_at": "2026-10-24T05:07:45.329327+00:00",
+        "buy_quote_id": 67,
+        "sell_quote_id": 68,
+        "status": "exit_unknown",
+        "roundtrip_return": null
+      }
+    },
+    {
+      "token": "0x935a7ec64a2a308aef2a9ac2464cba80f9d1fb4e",
+      "metadata": {
+        "request_id": 444,
+        "observed_at": "2026-10-24T05:04:03.224171+00:00",
+        "name": "DOAS",
+        "symbol": "DOAS",
+        "websites": [],
+        "socials": []
+      },
+      "pool_snapshot": {
+        "id": 508,
+        "request_id": 444,
+        "chain": "base",
+        "pool_address": "0xc9ef8f902a4497d66bc8d0c9a01128ff848a40d3158ca1c336b9e61edb6d1a52",
+        "observed_at": "2026-10-24T05:04:03.224171+00:00",
+        "source": "dexscreener",
+        "token_address": "0x935a7ec64a2a308aef2a9ac2464cba80f9d1fb4e",
+        "pool_created_at": "2026-10-24T03:35:35+00:00",
+        "price_usd": "0.2149",
+        "liquidity_usd": "101037.83",
+        "fdv_usd": "2067953992",
+        "market_cap_usd": "2067953992",
+        "volume_24h_usd": "269678.26",
+        "buys_24h": 163,
+        "sells_24h": 152,
+        "flags": "[\"holders_unknown\", \"contract_risk_unknown\", \"sellability_unknown\", \"circulating_supply_unverified\"]",
+        "normalizer_version": "2"
+      },
+      "security_observations": {
+        "id": 19,
+        "request_id": 27,
+        "token_address": "0x935a7ec64a2a308aef2a9ac2464cba80f9d1fb4e",
+        "observed_at": "2026-10-24T04:38:43.850779+00:00",
+        "status": "unknown",
+        "assessment": {
+          "version": "1",
+          "risk_fields": {
+            "is_proxy": "unknown",
+            "is_mintable": "unknown",
+            "can_take_back_ownership": "unknown",
+            "owner_change_balance": "unknown",
+            "hidden_owner": "unknown",
+            "transfer_pausable": "unknown",
+            "is_blacklisted": "unknown",
+            "slippage_modifiable": "unknown",
+            "is_honeypot": "unknown",
+            "cannot_sell_all": "unknown"
+          },
+          "flags": [],
+          "owner_address": null,
+          "taxes": {
+            "buy_tax": null,
+            "sell_tax": null
+          },
+          "source_open": null,
+          "conclusion": "unverified",
+          "limitations": [
+            "provider_report_not_audit",
+            "upgrade_control_not_independently_verified",
+            "role_based_permissions_unknown",
+            "live_sellability_unknown"
+          ]
+        }
+      },
+      "onchain_observations": null,
+      "indexed_holder_snapshots": null,
+      "review_quote_checks": {
+        "id": 19,
+        "run_id": 27,
+        "token_address": "0x935a7ec64a2a308aef2a9ac2464cba80f9d1fb4e",
+        "checked_at": "2026-10-24T05:07:46.927057+00:00",
+        "buy_quote_id": 69,
+        "sell_quote_id": 70,
+        "status": "roundtrip_quoted",
+        "roundtrip_return": "-0.0079649752251481590584414514"
+      }
+    },
+    {
+      "token": "0x94766a57b4963d851ead012b42662f1b06b83426",
+      "metadata": {
+        "request_id": 442,
+        "observed_at": "2026-10-24T05:04:02.300540+00:00",
+        "name": "AOKUMA",
+        "symbol": "AOKUMA",
+        "websites": [],
+        "socials": []
+      },
+      "pool_snapshot": {
+        "id": 468,
+        "request_id": 442,
+        "chain": "base",
+        "pool_address": "0x12911a7d63912367f06e3dc1eec6ca0746983b253b235ad341ce177cc3eae128",
+        "observed_at": "2026-10-24T05:04:02.300540+00:00",
+        "source": "dexscreener",
+        "token_address": "0x94766a57b4963d851ead012b42662f1b06b83426",
+        "pool_created_at": "2026-10-24T04:12:01+00:00",
+        "price_usd": "0.000002402",
+        "liquidity_usd": "3382.08",
+        "fdv_usd": "2402",
+        "market_cap_usd": "2402",
+        "volume_24h_usd": "1268.82",
+        "buys_24h": 4,
+        "sells_24h": 1,
+        "flags": "[\"holders_unknown\", \"contract_risk_unknown\", \"sellability_unknown\", \"circulating_supply_unverified\"]",
+        "normalizer_version": "2"
+      },
+      "security_observations": {
+        "id": 20,
+        "request_id": 28,
+        "token_address": "0x94766a57b4963d851ead012b42662f1b06b83426",
+        "observed_at": "2026-10-24T04:38:46.311594+00:00",
+        "status": "unknown",
+        "assessment": {
+          "version": "1",
+          "risk_fields": {
+            "is_proxy": "unknown",
+            "is_mintable": "unknown",
+            "can_take_back_ownership": "unknown",
+            "owner_change_balance": "unknown",
+            "hidden_owner": "unknown",
+            "transfer_pausable": "unknown",
+            "is_blacklisted": "unknown",
+            "slippage_modifiable": "unknown",
+            "is_honeypot": "unknown",
+            "cannot_sell_all": "unknown"
+          },
+          "flags": [],
+          "owner_address": null,
+          "taxes": {
+            "buy_tax": null,
+            "sell_tax": null
+          },
+          "source_open": null,
+          "conclusion": "unverified",
+          "limitations": [
+            "provider_report_not_audit",
+            "upgrade_control_not_independently_verified",
+            "role_based_permissions_unknown",
+            "live_sellability_unknown"
+          ]
+        }
+      },
+      "onchain_observations": null,
+      "indexed_holder_snapshots": null,
+      "review_quote_checks": {
+        "id": 20,
+        "run_id": 27,
+        "token_address": "0x94766a57b4963d851ead012b42662f1b06b83426",
+        "checked_at": "2026-10-24T05:07:47.708681+00:00",
+        "buy_quote_id": 71,
+        "sell_quote_id": null,
+        "status": "entry_unknown",
+        "roundtrip_return": null
+      }
+    }
+  ]
+}

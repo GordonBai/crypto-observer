@@ -1,0 +1,46 @@
+{
+  "asof_utc": "2026-11-04T14:03:12.972177+00:00",
+  "observations": [
+    {
+      "instrument_key": "bitget:spot:TIAUSDT",
+      "horizon_hours": 4,
+      "quote_at": "2026-11-03T23:12:58.498205+00:00",
+      "request_id": 176791,
+      "received_at": "2026-11-03T23:12:58.497009+00:00",
+      "source_ahead_of_receipt_seconds": 2.1039910316467285,
+      "reason": "stale_or_future_book",
+      "sha_verified": true
+    },
+    {
+      "instrument_key": "bitget:spot:RT1USDT",
+      "horizon_hours": 1,
+      "quote_at": "2026-11-03T23:12:59.031175+00:00",
+      "request_id": 176786,
+      "received_at": "2026-11-03T23:12:55.793346+00:00",
+      "source_ahead_of_receipt_seconds": 2.1196541786193848,
+      "reason": "stale_or_future_book",
+      "sha_verified": true
+    },
+    {
+      "instrument_key": "bitget:spot:APTUSDT",
+      "horizon_hours": 1,
+      "quote_at": "2026-11-03T23:12:59.031499+00:00",
+      "request_id": 176783,
+      "received_at": "2026-11-03T23:12:54.232564+00:00",
+      "source_ahead_of_receipt_seconds": 2.114435911178589,
+      "reason": "stale_or_future_book",
+      "sha_verified": true
+    },
+    {
+      "instrument_key": "bitget:spot:ZIGUSDT",
+      "horizon_hours": 24,
+      "quote_at": "2026-11-03T23:20:13.158333+00:00",
+      "request_id": 176901,
+      "received_at": "2026-11-03T23:20:13.156221+00:00",
+      "source_ahead_of_receipt_seconds": 2.1397790908813477,
+      "reason": "stale_or_future_book",
+      "sha_verified": true
+    }
+  ],
+  "interpretation": "Existing execution guard rejects source times more than one second ahead of receipt. No tolerance change or historical result replacement was made."
+}

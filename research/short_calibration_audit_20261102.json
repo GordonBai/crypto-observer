@@ -1,0 +1,40 @@
+{
+  "asof_utc": "2026-11-02T04:38:48.528114+00:00",
+  "version": "short-v1",
+  "calibration_at": "2026-11-02T03:03:16.959664+00:00",
+  "boundary": "2026-11-02T02:57:42.391246+00:00",
+  "rows": 3072,
+  "instruments": 24,
+  "frozen_thresholds": {
+    "price_return": "0.010273972602739726027397260",
+    "volume_ratio": "3.739136482932995314461898367"
+  },
+  "recomputed_thresholds": {
+    "volume_ratio": "3.739136482932995314461898367",
+    "price_return": "0.010273972602739726027397260"
+  },
+  "thresholds_match": true,
+  "assessment_ids_match": true,
+  "evidence_sha256": "03952be1f824022bf18adeed19450b94d290c3cbfd849af8b79338bfe3306597",
+  "holdout_assessments": [
+    {
+      "status": "complete",
+      "reason": null,
+      "n": 48
+    },
+    {
+      "status": "unknown",
+      "reason": "decision_window_missed",
+      "n": 48
+    }
+  ],
+  "holdout_outcomes": [
+    {
+      "horizon_hours": 1,
+      "status": "quoted",
+      "n": 1
+    }
+  ],
+  "integrity": "ok",
+  "fk": 0
+}

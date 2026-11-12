@@ -1,0 +1,105 @@
+{
+  "asof_utc": "2026-11-03T16:56:19.134928+00:00",
+  "mode": "displayed_book_quote_not_fill",
+  "fee_bps_per_side": 10,
+  "holdout_24h": [
+    {
+      "instrument_key": "bitget:spot:RT1USDT",
+      "strategy": "volume",
+      "phase": "holdout",
+      "position_id": 123,
+      "entry_at": "2026-11-02T03:09:32.249114+00:00",
+      "quantity_base": "24623.63135121951219512195122",
+      "entry_cost_quote": "100.1000000000000000000000000",
+      "horizon_hours": 24,
+      "observed_at": "2026-11-03T03:13:06.953445+00:00",
+      "status": "quoted",
+      "quote_id": 23310,
+      "proceeds_quote": "83.69536124376219512195121952",
+      "net_return": "-0.1638825050573207280524353694",
+      "stress_returns": "{\"0\":\"-0.1622085961585365853658536585\",\"10\":\"-0.1638825050573207280524353694\",\"30\":\"-0.1672203094417357683048415728\"}",
+      "entry_request": 143641,
+      "exit_request": 156629
+    },
+    {
+      "instrument_key": "bitget:spot:RT1USDT",
+      "strategy": "price",
+      "phase": "holdout",
+      "position_id": 124,
+      "entry_at": "2026-11-02T04:08:26.195356+00:00",
+      "quantity_base": "23474.17840375586854460093897",
+      "entry_cost_quote": "100.1000000000000000000000000",
+      "horizon_hours": 24,
+      "observed_at": "2026-11-03T04:13:33.087306+00:00",
+      "status": "quoted",
+      "quote_id": 23384,
+      "proceeds_quote": "77.07593090427464788732394367",
+      "net_return": "-0.2300106802769765445821783849",
+      "stress_returns": "{\"0\":\"-0.2284691601173708920187793426\",\"10\":\"-0.2300106802769765445821783849\",\"30\":\"-0.2330844991395999794045094762\"}",
+      "entry_request": 144216,
+      "exit_request": 157654
+    }
+  ],
+  "request_provenance": [
+    {
+      "request_id": 143641,
+      "url": "https://api.bitget.com/api/v3/market/orderbook?category=SPOT&symbol=RT1USDT&limit=50",
+      "observed_at": "2026-11-02T03:09:32.245717+00:00",
+      "source_ts": "1793588972196",
+      "best_ask": [
+        0.004005,
+        10051.84
+      ],
+      "best_bid": [
+        0.003981,
+        3731.37
+      ],
+      "sha_ok": true
+    },
+    {
+      "request_id": 144216,
+      "url": "https://api.bitget.com/api/v3/market/orderbook?category=SPOT&symbol=RT1USDT&limit=50",
+      "observed_at": "2026-11-02T04:08:26.192199+00:00",
+      "source_ts": "1793592506171",
+      "best_ask": [
+        0.00426,
+        24130.35
+      ],
+      "best_bid": [
+        0.004257,
+        9049.43
+      ],
+      "sha_ok": true
+    },
+    {
+      "request_id": 156629,
+      "url": "https://api.bitget.com/api/v3/market/orderbook?category=SPOT&symbol=RT1USDT&limit=50",
+      "observed_at": "2026-11-03T03:13:06.950209+00:00",
+      "source_ts": "1793675586873",
+      "best_ask": [
+        0.003443,
+        95961.68
+      ],
+      "best_bid": [
+        0.003403,
+        19597.93
+      ],
+      "sha_ok": true
+    },
+    {
+      "request_id": 157654,
+      "url": "https://api.bitget.com/api/v3/market/orderbook?category=SPOT&symbol=RT1USDT&limit=50",
+      "observed_at": "2026-11-03T04:13:33.084617+00:00",
+      "source_ts": "1793679213043",
+      "best_ask": [
+        0.00334,
+        598.8
+      ],
+      "best_bid": [
+        0.003296,
+        9551.8
+      ],
+      "sha_ok": true
+    }
+  ]
+}

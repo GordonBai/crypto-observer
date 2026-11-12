@@ -4,6 +4,7 @@ import shutil
 from datetime import datetime, timedelta
 from pathlib import Path
 from .core import now
+from .runtime_metrics import StepTimer, provenance, BudgetClient
 
 
 def atomic_write(path, content):
@@ -14,10 +15,14 @@ def atomic_write(path, content):
     temporary.replace(path)
 
 
-def cycle(store, client, output_dir='reports/short_term', market_limit=36):
+def cycle(store, client, output_dir='reports/short_term', market_limit=36, mode="full", network_budget_seconds=None, request_budget=None):
     from .market_data import collect_market, report as market_report
     from .short_experiment import cycle as experiment_cycle, report as experiment_report, setup as experiment_setup, VERSION as study_version
+    if mode not in {"full", "critical", "maintenance"}:
+        raise ValueError("invalid runtime mode")
     root = Path(output_dir)
+    if mode != "full":
+        root = root / mode
     root.mkdir(parents=True, exist_ok=True)
     if shutil.disk_usage(root).free < 512*1024*1024:
         raise RuntimeError('less than 512 MiB free; no collection performed')
@@ -33,42 +38,49 @@ def cycle(store, client, output_dir='reports/short_term', market_limit=36):
     health = {'started_at':now(),'observation_until':deadline.isoformat(),
               'mode':'public_data_and_paper_only','errors':[],'steps':{},'current_step':None,
               'disk_free_bytes':shutil.disk_usage(root).free}
+    health["provenance"] = provenance(mode)
+    budget = BudgetClient(client, network_budget_seconds, request_budget)
+    if network_budget_seconds is not None or request_budget is not None:
+        client = budget
     def step(name, fn):
         health['current_step'] = name
         atomic_write(root/'health.json',json.dumps(health,indent=2)+'\n')
         try:
-            result = fn()
+            with StepTimer(health, name, now):
+                result = fn()
             health['steps'][name] = result
             return result
         except Exception as exc:
             health['errors'].append({'step':name,'type':type(exc).__name__,'message':str(exc)[:500]})
             health['steps'][name] = {'status':'failed'}
             return None
-    if expired:
+    if expired and mode != "maintenance":
         # Deliberately do not fetch quotes after the observation deadline. The
         # experiment cycle must still resolve missed windows without network.
         class OfflineClient:
             def get(self,*args,**kwargs):
                 raise RuntimeError('short-term observation deadline passed; network disabled')
         step('experiment_finalize_offline',lambda:experiment_cycle(store,OfflineClient()))
-    else:
+    elif mode != "maintenance":
         step('market_collect',lambda:collect_market(store,client,market_limit))
         step('short_experiment',lambda:experiment_cycle(store,client))
-    for filename,fn in [('market.md',market_report),('experiment.md',experiment_report)]:
+    for filename,fn in ([('market.md',market_report),('experiment.md',experiment_report)] if mode != 'critical' else []):
         def write_report(filename=filename,fn=fn):
             atomic_write(root/filename,fn(store))
             return {'path':str(root/filename)}
         step('report:'+filename,write_report)
-    health['database_quick_check'] = store.db.execute('PRAGMA quick_check').fetchone()[0]
+    health['database_quick_check'] = (store.db.execute('PRAGMA quick_check').fetchone()[0] if mode != 'critical' else 'not_run_critical')
     notes = any(isinstance(v,dict) and v.get('notes') for v in health['steps'].values())
-    health['status'] = ('failed' if health['errors'] or health['database_quick_check']!='ok'
+    health['status'] = ('failed' if health['errors'] or health['database_quick_check'] not in ('ok','not_run_critical')
                         else 'observation_window_complete' if expired else 'degraded' if notes else 'ok')
     health['current_step'] = None
+    health["network_budget"] = (budget.evidence() if network_budget_seconds is not None or request_budget is not None else {"enabled": False})
     health['finished_at'] = now()
     atomic_write(root/'health.json',json.dumps(health,indent=2)+'\n')
     with (root/'cycles.jsonl').open('a') as file:
         file.write(json.dumps(health)+'\n')
-    atomic_write(root/'audit.md',audit_report(store,root))
+    if mode != 'critical':
+        atomic_write(root/'audit.md',audit_report(store,root))
     return health
 
 
